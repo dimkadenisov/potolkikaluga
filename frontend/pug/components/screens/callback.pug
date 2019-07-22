@@ -1,0 +1,26 @@
+.callback
+  .container
+    .row
+      .col-12
+        span.screen-heading.callback-heading.wow.fadeInUp Готовы сделать заказ...
+      .col-12.col-md-6.offset-md-6
+        span.callback-description.wow.fadeInUp но остались вопросы?
+      .col-12.col-md-5.col-lg-4.wow.fadeInLeft
+        span.callback-text-big ЗВОНОК
+        form.callback-form
+          span.callback-form-text Оставьте заявку на обратный
+            br
+            |звонок технолога
+          .personal-guarantee-request-input
+            input.add-phone-mask(type="tel" placeholder="Телефон" style="background-image: url(assets/img/icons/phone-magenta.png)")
+          button Отправить
+      div(data-wow-delay="0.5s").col-12.col-md-1.col-lg-2.col-xl-3.wow.fadeInRight
+        span.d-none.d-md-block.callback-text-big.callback-margin.callback-text-big-move-left или
+      div(data-wow-delay="1s").col-12.col-md-6.col-xl-5.wow.fadeInRight
+        span.d-none.d-md-block.callback-text-big.callback-margin.callback-margin-double ПРИХОДИТЕ
+          br
+          |В ОФИС
+        span.d-none.d-md-block.callback-form-text.callback-form-text-coffee Приходите к нам в офис
+          br
+          |на чашечку кофе
+        .d-none.d-md-block.callback-coffee(style="background-image: url(assets/img/coffee.png)")

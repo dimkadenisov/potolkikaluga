@@ -1,0 +1,175 @@
+//animations
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes buzz-out {
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    transform: translateX(1px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(-1px) rotate(0deg);
+  }
+}
+
+.buzz-out {
+  animation: buzz-out linear 1s;
+}
+
+@keyframes make-longer {
+  0% {
+    height: 0;
+  }
+
+  to {
+    height: 95%;
+  }
+}
+
+.make-longer {
+  animation: make-longer linear 4s;
+  animation-fill-mode: both;
+}
+
+@keyframes grow-up {
+  0% {
+    width: 9px;
+    height: 9px;
+  }
+
+  to {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.grow-up {
+  animation: grow-up linear 1.5s;
+}
+
+@keyframes fadeInLeft-custom {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft-custom {
+  animation-name: fadeInLeft-custom;
+  animation-fill-mode: both;
+  animation-duration: 0.3s;
+}
+
+@keyframes fadeInRight-custom {
+  0% {
+    opacity: 0;
+    transform: translate3d(200%, 0, 0);
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight-custom {
+  animation-name: fadeInRight-custom;
+  animation-fill-mode: both;
+  animation-duration: 0.3s;
+}
+
+@keyframes svgDasharray {
+  0% {
+    stroke-dashoffset: 10000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 5;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes showSvgShape {
+  0% {
+    stroke-dasharray: 500% 500%;
+    stroke-dashoffset: 500%;
+  }
+
+  100% {
+    stroke-dashoffset: 0%;
+  }
+}
+
+.showSvgShape {
+  animation-name: showSvgShape;
+  animation-fill-mode: both;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}

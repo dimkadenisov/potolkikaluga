@@ -1,0 +1,225 @@
+.payment {
+  position: relative;
+  height: calc(100vh - 116px);
+  min-height: 800px;
+
+  &-state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 185px;
+    margin: 0 0 35px 0;
+
+    &-fulfilled {
+      background: $green-payment;
+    }
+
+    &-rejected {
+      background: $gray-500;
+    }
+  }
+
+  &-icon {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+
+    &-fulfilled {
+      background: url("../assets/img/icons/check.svg"), $white;
+      background-size: 50% 50%, cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &-rejected {
+      position: relative;
+      background: $red;
+
+      &::after {
+        content: "+";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: $white;
+        font-size: 1000%;
+        font-weight: 900;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  &-heading {
+    display: block;
+    padding: 0 2em;
+    margin: 0 auto 45px auto;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+
+    &-fulfilled {
+      color: $green-payment;
+    }
+
+    &-rejected {
+      color: $red;
+    }
+  }
+
+  &-text {
+    display: block;
+    padding: 0 2em;
+    margin: 0 auto 100px auto;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  &-list {
+    max-width: 30%;
+    margin: 0 auto;
+
+    li {
+      position: relative;
+      margin: 0 0 30px 1.2em;
+      list-style: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -1.2em;
+        width: 0.8em;
+        height: 0.8em;
+        background: $magenta;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    a {
+      color: $black;
+      font-size: 18px;
+      border-bottom: 1px dashed $magenta;
+
+      &:hover,
+      &:focus {
+        color: $black;
+        border-bottom: 1px solid $magenta;
+      }
+    }
+  }
+
+  .calculator-button {
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    width: 325px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: 50px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1579px) {
+  .payment {
+    height: calc(100vh - 84px);
+    min-height: 536px;
+
+    &-state {
+      height: 120px;
+      margin: 0 0 15px 0;
+    }
+
+    &-icon {
+      width: 80px;
+      height: 80px;
+    }
+
+    &-heading {
+      margin: 0 auto 20px auto;
+    }
+
+    &-text {
+      margin: 0 auto 40px auto;
+    }
+
+    &-list {
+      max-width: 45%;
+
+      li {
+        margin: 0 0 20px 1.2em;
+      }
+    }
+
+    .calculator-button {
+      bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .payment {
+    &-list {
+      max-width: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .payment {
+    height: calc(100vh - 206px);
+    min-height: 600px;
+
+    &-list {
+      max-width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .payment {
+    height: calc(100vh - 35px);
+    min-height: 500px;
+
+    &-state {
+      height: 140px;
+    }
+
+    &-icon {
+      width: 70px;
+      height: 70px;
+    }
+
+    &-heading {
+      padding: 0 15px;
+      font-size: 18px;
+    }
+
+    &-text {
+      padding: 0 15px;
+      margin: 0 0 30px 0;
+      font-size: 14px;
+    }
+
+    &-list {
+      max-width: 100%;
+      padding: 0 40px;
+
+      a {
+        font-size: 12px;
+      }
+    }
+
+    .calculator-button {
+      bottom: 20px;
+      width: 240px;
+      height: 35px;
+      font-size: 16px;
+      line-height: 35px;
+    }
+  }
+}
+
+// @media screen and (max-width: 575px) {}

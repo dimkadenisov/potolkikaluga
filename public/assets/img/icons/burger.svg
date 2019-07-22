@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="burger" viewBox="0 0 25 25"><path d="M0 4.5h25v3H0v-3zM0 11h25v3H0v-3zm0 6.5h25v3H0v-3z" class="burger-open"/><path d="M-.016 1.964l1.98-1.98 23.051 23.052-1.98 1.98z" class="d-none burger-close"/><path d="M-.016 23.036L23.036-.016l1.98 1.98L1.963 25.016z" class="d-none burger-close"/></svg>

@@ -1,0 +1,79 @@
+.personal-guarantee
+  .container
+    .row
+      .col-12.col-sm-10.col-lg-9.col-xl-5.offset-lg-1
+        span.personal-guarantee-heading.wow.fadeInUp Персональная гарантия результата
+          br
+          |от руководителя компании
+      .col-6.d-none.d-xl-block
+      .col-12.d-none.d-xl-block
+        .personal-guarantee-promo-arrow
+          include ../../../assets/img/icons/personal-guaranty-arrow.svg
+        .personal-guarantee-promo-text Промокод на скидку
+          br
+          |в конце видео
+      .col-12.col-md-10.col-lg-9.offset-lg-1.col-xl-5.offset-xl-1
+        .personal-guarantee-video
+          video(id="main-personal-warranty-video" controls="" loop="" preload="metadata" poster="assets/img/poster.jpg")
+            source(src="assets/director2.mp4" type="video/mp4")
+          //- iframe(src="https://www.youtube.com/embed/NMbNwMKarcA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      .col-5.d-none.d-xl-block
+        .personal-guarantee-text.wow.zoomIn
+          p Самое ценное для нас – доверие клиентов. Подход «продал и забыл» уже
+            |давно не работает. Клиенты за считанные минуты находят реальную информацию
+            |о компании. Отзывы, сарафанное радио влияют на репутацию. И мы
+            |делаем все, чтобы вы получили европейский сервис, вне зависимости от
+            |суммы вашего заказа. Сервис – это не только своевременная установка
+            |потолка, но и реакция на пожелания. Все они гарантированно будут 
+            |услышаны. А замечания устранены по первому требованию.
+          p Мы открыты для общения с клиентами и улучшения сервиса. Прямой
+            |номер телефона руководителя получает каждый клиент! Вы останетесь
+            |довольны качеством натяжного потолка и нашей работой.
+          p С уважением, Симонов Сергей Алексеевич
+      .col-2.col-xl-5.offset-xl-1.d-none.d-md-block
+        .personal-guarantee-items
+          .personal-guarantee-items-item.wow.fadeInLeft
+            i(style="background-image: url(assets/img/icons/phone-stroke.svg)")
+            span.personal-guarantee-items-heading Прямой номер
+            |
+            |
+            span.personal-guarantee-items-description
+              |руководителя
+              //- br
+              |для всех
+              //- br
+              |замечаний
+              //- br
+              |+79158901320
+          .personal-guarantee-items-item.wow.fadeInLeft
+            i(style="background-image: url(assets/img/icons/paper.svg)")
+            span.personal-guarantee-items-heading Договор
+            |
+            |
+            span.personal-guarantee-items-description
+              |оформляется строго
+              //- br
+              |в соотв. с законом
+              //- br
+              |РФ «О защите прав
+              //- br
+              |потреб. (ЗоЗПП) 2017»
+          .personal-guarantee-items-item.wow.fadeInLeft
+            i(style="background-image: url(assets/img/icons/shield.svg)")
+            span.personal-guarantee-items-heading Контроль качества
+            |
+            |
+            span.personal-guarantee-items-description
+              |после монтажа —
+              //- br
+              |обзваниваем
+              //- br
+              |всех клиентов
+      .col-12.col-lg-11.offset-lg-1.offset-xl-0.col-xl-5
+        form.personal-guarantee-request.wow.fadeInUp
+          span.personal-guarantee-request-text Активировать промокод от директора на скидку 1 000 ₽
+          .personal-guarantee-request-input
+            input(type="text" placeholder="Промокод" style="background-image: url(assets/img/icons/user.png)")
+          .personal-guarantee-request-input
+            input.add-phone-mask(type="tel" placeholder="Ваш телефон" style="background-image: url(assets/img/icons/phone-magenta.png)")
+          button.personal-guarantee-request-button Активировать

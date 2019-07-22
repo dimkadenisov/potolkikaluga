@@ -1,0 +1,19 @@
+extends ../components/page
+block title
+  |Успешная оплата
+block link
+block content
+  .payment
+    .payment-state.payment-state-fulfilled
+      .payment-icon.payment-icon-fulfilled
+    span.payment-heading.payment-heading-fulfilled Спасибо!
+    span.payment-text Ваш заказ успешно оплачен и&nbsp;передан в&nbsp;работу!
+    ul.payment-list
+      li
+        a(href="#") Получить актуальную информацию о&nbsp;статусе заказа.
+      li
+        a(href="#") Изменить параметры заказа.
+      li
+        a(href="#") Скачать памятку о&nbsp;подготовке помещения перед&nbsp;монтажем.
+
+    a(href="#").calculator-button Вернуться на сайт

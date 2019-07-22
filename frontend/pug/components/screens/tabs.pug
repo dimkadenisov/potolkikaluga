@@ -1,0 +1,146 @@
+.container
+  .row
+    .col-12
+      .wow.fadeInUp.tabs
+        .d-flex.d-md-none.tabs-buttons
+          a(href="#") скачать прайс
+          a(href="#") скачать каталог
+        input(type="radio" name="tabs" checked)#tab-1
+        label(for="tab-1") FAQ
+        input(type="radio" name="tabs")#tab-2
+        label(for="tab-2").d-none.d-md-inline-block Прайс
+        input(type="radio" name="tabs")#tab-3
+        label(for="tab-3").d-none.d-md-inline-block Скачать каталоги
+        .tabs-content#tab-content-1
+          .tabs-faq
+            span.tabs-faq-heading Вопросы и ответы
+            .tabs-faq-question
+              input(type="checkbox" id="question-1")
+              label(for="question-1")
+                span Где можно использовать глянцевые натяжные потолки?
+              span.tabs-faq-answer Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reiciendis ipsum minima doloremque ea quaerat mollitia. Ad, omnis? Officiis vitae nisi aliquid soluta asperiores cum est assumenda magnam perspiciatis inventore.Debitis, nemo culpa ipsam quasi beatae repellendus, alias quo adipisci eum nostrum nam quisquam autem odio officia asperiores quaerat deleniti quibusdam et distinctio corporis tempore illo ratione magnam sit?
+            .tabs-faq-question
+              input(type="checkbox" id="question-2")
+              label(for="question-2")
+                span Где можно использовать глянцевые натяжные потолки?
+              span.tabs-faq-answer hello
+            .tabs-faq-question
+              input(type="checkbox" id="question-3")
+              label(for="question-3")
+                span Где можно использовать глянцевые натяжные потолки?
+              span.tabs-faq-answer hello
+            .tabs-faq-question
+              input(type="checkbox" id="question-4")
+              label(for="question-4")
+                span Где можно использовать глянцевые натяжные потолки?
+              span.tabs-faq-answer hello
+            .tabs-faq-question
+              input(type="checkbox" id="question-5")
+              label(for="question-5")
+                span Где можно использовать глянцевые натяжные потолки?
+              span.tabs-faq-answer hello
+          .tabs-person
+        .tabs-content#tab-content-2
+          table.tabs-content-table
+            thead
+              th Фактуры
+              th коллекция Эконом
+              th коллекция Eco line
+            tbody
+              tr
+                td
+                  b Матовый
+                td от 199 р/м2
+                td от 320 р/м2
+              tr
+                td
+                  b Глянцевый
+                td от 199 р/м2
+                td от 320 р/м2
+              tr
+                td
+                  b Сатиновый
+                td от 199 р/м2
+                td от 320 р/м2
+              tr
+                td
+                  b Тканевый
+                td(colspan="2") от 1990 р/м2
+            tr
+              td(colspan="3")
+                b Монтажные работы
+            tr
+              td
+                b Профиль ПВХ
+              td(colspan="2") 300 р/м.п.
+            tr
+              td
+                b Профиль алюм.
+              td(colspan="2") 350 р/м.п.
+            tr
+              td
+                b Монтаж люстры на крючке
+              td(colspan="2") 400 р.
+            tr
+              td
+                b Обход углов
+              td(colspan="2") 250 р.
+            tr
+              td
+                b Обход трубы
+              td(colspan="2") 300 р.
+        .tabs-content#tab-content-3
+          .container-fluid
+            .row
+              .col-12
+                .get-pdf
+                  span.d-none.d-md-block.get-pdf-description Получите каталоги с ценами и самым полным ассортиментов
+                    br
+                    |цветов и фактур на email/viber/whatsapp/telegram
+                  form.get-pdf-form
+                    .d-none.d-md-flex
+                      i(style="background-image: url(assets/img/icons/promocode.svg)")
+                      span Секретный промокод от менеджера
+                        |на бесплатный монтаж люстры или карниза
+                        |для штор (экономия до 2000 руб!)
+                    .d-none.d-md-flex
+                      i(style="background-image: url(assets/img/icons/catalog.svg)")
+                      span Каталог с подборками
+                        br
+                        |по типам и фактурам
+                    div
+                      input(type="text" placeholder="Имя" required)
+                      i(style="background-image: url(assets/img/icons/user.png)")
+                    .d-none.d-md-flex
+                      i(style="background-image: url(assets/img/icons/pricelist.svg)")
+                      span Актуальный  прайслист
+                        br
+                        |(цены обновлены 2 дня назад)
+                    div
+                      input.messengers-input.add-phone-mask(type="tel" placeholder="Телефон" required)
+                      i(style="background-image: url(assets/img/icons/phone-magenta.png)")
+                    div
+                      button Получить каталоги
+                    label.d-none.d-md-block Я согласен на получение
+                      br
+                      |информации от Мастер Потолков
+                      br
+                      a(href="#") Изменить настройки
+                      input(type="checkbox" checked="checked" required)
+                      span.checkmark
+                    label.d-none.d-md-block Нажимая на кнопку, я даю согласие на обработку
+                      br
+                      |персональных данных и соглашаюсь с
+                      br
+                      a(href="#") пользовательским соглашением
+                      |
+                      |
+                      |и
+                      br
+                      a(href="#") политикой конфиденциальности
+                      input(type="checkbox" checked="checked" required)
+                      span.checkmark
+                  img.rellax(src="assets/img/catalog.png", alt="каталог" data-rellax-speed="1" data-rellax-percentage="0.5")
+                  .get-pdf-arrow
+                    include ../../../assets/img/icons/arrow.svg
+                  include ../../../assets/img/icons/corner.svg

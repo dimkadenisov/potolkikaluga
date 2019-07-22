@@ -1,0 +1,55 @@
+.screen-1
+  .screen-1-person-bg.wow.fadeInRight(style="background-image:url(assets/img/person.png)")
+  .flexer
+    .flexer-bubble
+    .screen-1-text
+      .container
+        .row
+          .col-12
+            span.screen-1-description.wow.fadeInUp в Москве и МО
+            span.screen-1-heading.wow.fadeInUp Натяжные потолки
+            ul.screen-1-list
+              li Цены от 199 р/м²
+              li Монтаж по ГОСТ Р 54961-2012
+              li Договор по закону РФ «О&nbsp;защите прав потребителей (ЗоЗПП) 2017»
+            .summer-sale
+              .summer-sale-image(style="background-image: url(assets/img/summer-sale.png)")
+              span.summer-sale-text Скидка
+
+            .price.wow.fadeInUp
+              span -49
+                sup %
+                  sup *
+
+                .deadline.wow.fadeInUp
+                  span Только до 30 июня
+
+    .adress-form-wrapper.wow.fadeInUp
+      .container
+        .row
+          .col-12
+            .adress-form
+              span Бесплатный замер в Москве или МО. Выберите удобную дату и время
+              form
+                .d-none.d-xl-block.adress
+                  input(type="text", placeholder="Ваш адрес в Москве")
+                .phone
+                  input.add-phone-mask(type="tel", placeholder="Телефон")
+                .date
+                  input#datepicker(type="text", placeholder="Дата и время", autocomplete="off", readonly, style="cursor: text;")
+                button Вызвать замерщика
+  .d-none.d-md-flex.partners
+    img(src="assets/img/partner-1.png", alt="partner-1")
+    img(src="assets/img/partner-2.png", alt="partner-2")
+    img(src="assets/img/partner-3.png", alt="partner-3")
+    img(src="assets/img/partner-4.png", alt="partner-4")
+    img(src="assets/img/partner-5.png", alt="partner-5")
+    img(src="assets/img/partner-6.png", alt="partner-6")
+    img(src="assets/img/partner-7.png", alt="partner-7")
+    img(src="assets/img/partner-8.png", alt="partner-8")
+  //- a.screen-1-popup-opener(href="", data-fancybox="popup-buy", data-src="#popup-buy", data-touch="false", data-options='{"smallBtn" : false, "buttons": []}') Go
+
+  a.screen-1-popup-opener(href="#", data-fancybox="popup-buy")
+    span.screen-1-popup-opener-text Заказать онлайн
+    div.screen-1-popup-opener-circle
+      //- span.screen-1-popup-opener-counter 2

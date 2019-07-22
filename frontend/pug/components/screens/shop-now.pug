@@ -1,0 +1,88 @@
+.container
+  .row
+    .col-xl-12.offset-xl-0.col-lg-10.offset-lg-2.col-8.offset-md-0.offset-1
+      span.screen-heading.shop-now-heading.wow.fadeInUp Интернет магазин
+      span.screen-description.shop-now-description.wow.fadeInUp натяжных потолков
+.choose-and-order
+  .container
+      .row
+        .col-11.col-md-8.col-xl-9.offset-xl-3.offset-md-0.offset-1
+          span.choose-and-order-text выберите и закажите потолок прямо
+.shop-now
+  .container
+    .row
+      .col-12
+        .shop-now-grid
+          .shop-now-trolley.wow.fadeInLeft.rellax(style="background-image: url(assets/img/trolley.png)" data-rellax-speed="1" data-rellax-percentage="0.4")
+          .d-none.d-xl-block.shop-now-discount-banner.wow.fadeInRight(style="background-image: url(assets/img/discount.png)")
+          ul.shop-now-zero-problems.wow.fadeInUp
+            li Без вызова замерщика,
+            li общения с офисом,
+            li со скидкой за онлайн заказ
+
+          span.here-and-now здесь и сейчас
+            include ../../../assets/img/icons/shop-now-arrow.svg
+          span.steps-text
+            span.steps-opacity Выберите цвет и&nbsp;фактуру
+            span.steps-opacity Введите параметры помещений
+            span.steps-opacity Укажите адрес
+              br
+              |и&nbsp;дату монтажа
+            span.steps-opacity Оформите
+              br
+              |договор онлайн
+          span.steps-counter
+            div.steps-opacity 1
+            div.steps-opacity 2
+            div.steps-opacity 3
+            div.steps-opacity 4
+          .steps-progress-bar
+            .steps-progress-bar-line
+              .steps-progress-bar-line-red.wow.make-longer
+            .steps-progress-bar-dot-wrapper
+              .steps-progress-bar-dot-border
+              .steps-progress-bar-dot
+            .steps-progress-bar-dot-wrapper
+              .steps-progress-bar-dot-border
+              .steps-progress-bar-dot
+            .steps-progress-bar-dot-wrapper
+              .steps-progress-bar-dot-border
+              .steps-progress-bar-dot
+            .steps-progress-bar-dot-wrapper
+              .steps-progress-bar-dot-border
+              .steps-progress-bar-dot
+          span.steps-description
+            span 125 оттенков и 3 фактуры,
+              br
+              |выберите нужный варант в 2 клика
+            span вам нужно знать только  длину и ширину
+              br
+              |помещения и указать нужное
+              br
+              |колво светильников, люстр, карнизов
+            span вы можете выбрать любую удобную
+              br
+              |дату монтажа - через 3 дня
+              br
+              |или 2 мес, зависит только от вас
+            span Минимальный аванс всего 25%,
+              br
+              |остальное оплачивается на монтаже.
+              br
+              |Можно оплатить картой Халва и
+              br
+              |получить рассрочку на 4 мес!
+  .shop-now-person.wow.fadeInLeft
+.shop-now-button-wrapper
+  .container
+    .row
+      .col-12.col-md-6.offset-md-6
+        //- a.shop-now-button.wow.fadeInUp(href="", data-fancybox="popup-buy", data-src="#popup-buy", data-touch="false", data-options='{"smallBtn" : false, "buttons": []}')
+        //-   |Начать выбор
+        //-   br
+        //-   |цвета и фактуры
+
+        a.shop-now-button.wow.fadeInUp(href="#" data-fancybox="popup-buy")
+          |Начать выбор
+          br
+          |цвета и фактуры

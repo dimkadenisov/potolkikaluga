@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/img/icons/site.webmanifest" />
+    <link rel="mask-icon" href="assets/img/icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="assets/img/icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-config" content="assets/img/icons/browserconfig.xml" />
+    <meta name="theme-color" content="#e5046a" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/swiper.min.css" />
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/jquery.datetimepicker.min.css" />
+    <link rel="stylesheet" href="styles/animate.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/dynamic-banner.css" />
+    <link rel="stylesheet" href="styles/popup-buy.css" />
+    <title>Каталог потолков</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <header>
+        <div class="top-line-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-line">
+                            <div class="top-line-city-choice-wrapper">
+                                <div class="top-line-city-choice"><a href="#">Малоярославец</a><span></span></div>
+                            </div>
+                            <div class="d-none d-md-block top-line-service">
+                                <div class="top-line-service-item"><i></i><span>Сервисная служба 24/7</span></div>
+                                <div class="top-line-service-item"><i></i><span>Рассрочка 0-0-4</span></div>
+                            </div>
+                            <div class="d-none d-md-block top-line-ask"><span>Задайте вопрос</span></div>
+                            <div class="d-none d-md-block top-line-social"><a class="top-line-social-link" href="#"><svg class="top-line-social-link-icon telegram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                                        <path d="M5.3 144.6l69.1 25.8 26.8 86c1.7 5.5 8.5 7.5 12.9 3.9l38.5-31.4c4-3.3 9.8-3.5 14-.4l69.5 50.5c4.8 3.5 11.6.9 12.8-4.9l50.9-244.9c1.3-6.3-4.9-11.6-10.9-9.3L5.2 129.4c-7 2.7-6.9 12.6.1 15.2zm91.6 12.1L232 73.5c2.4-1.5 4.9 1.8 2.8 3.7L123.3 180.9c-3.9 3.6-6.4 8.5-7.2 13.8l-3.8 28.1c-.5 3.8-5.8 4.1-6.8.5L90.9 172c-1.6-5.8.8-12.1 6-15.3z" /></svg></a><a class="top-line-social-link" href="#"><svg class="top-line-social-link-icon whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M256.1 0h-.1C114.8 0 0 114.8 0 256c0 56 18 107.9 48.7 150l-31.9 95.1 98.4-31.5C155.7 496.5 204 512 256.1 512 397.2 512 512 397.2 512 256S397.2 0 256.1 0zM405 361.5c-6.2 17.4-30.7 31.9-50.2 36.1-13.4 2.8-30.8 5.1-89.7-19.3-75.2-31.2-123.7-107.6-127.5-112.6-3.6-5-30.4-40.5-30.4-77.2s18.7-54.6 26.2-62.3c6.2-6.3 16.4-9.2 26.2-9.2 3.2 0 6 .2 8.6.3 7.5.3 11.3.8 16.3 12.6 6.2 14.9 21.2 51.6 23 55.4 1.8 3.8 3.6 8.9 1.1 13.9-2.4 5.1-4.5 7.4-8.3 11.7s-7.4 7.7-11.1 12.4c-3.5 4.1-7.4 8.4-3 15.9 4.4 7.4 19.4 31.9 41.5 51.6 28.6 25.4 51.7 33.6 60 37 6.2 2.6 13.5 2 18-2.8 5.7-6.2 12.8-16.4 20-26.5 5.1-7.2 11.6-8.1 18.4-5.6 6.9 2.4 43.5 20.5 51 24.2 7.5 3.8 12.5 5.6 14.3 8.7 1.8 3.4 1.8 18.2-4.4 35.7z" /></svg></a><a class="top-line-social-link" href="#"><svg class="top-line-social-link-icon viber" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322 322" width="21" height="21">
+                                        <path d="M275.4 135.1c.4-45.4-38.3-87-86.2-92.8-1-.1-2-.3-3.1-.5-2.4-.4-4.8-.8-7.3-.8-9.8 0-12.4 6.9-13.1 11-.7 4 0 7.4 1.9 10 3.3 4.4 9 5.2 13.6 5.8 1.3.2 2.6.4 3.7.6 43 9.6 57.5 24.7 64.6 67.4.2 1 .3 2.3.3 3.7.3 5.1 1 15.7 12.4 15.7 1 0 2-.1 3-.2 10.6-1.6 10.3-11.3 10.1-16 0-1.3-.1-2.6 0-3.4.1-.1.1-.3.1-.5z" />
+                                        <path d="M176.1 25.7c1.3.1 2.5.2 3.5.3 70.7 10.9 103.2 44.4 112.2 115.6.2 1.2.2 2.7.2 4.3.1 5.6.3 17.1 12.7 17.4h.4c3.9 0 7-1.2 9.2-3.5 3.9-4 3.6-10.1 3.4-14.9-.1-1.2-.1-2.3-.1-3.3.9-72.9-62.2-138.9-135-141.4h-1.8c-.7 0-1.6-.1-2.6-.1-1.1-.1-2.4-.2-3.8-.2-11.6 0-13.8 8.2-14.1 13.2-.5 11.4 10.5 12.2 15.8 12.6zm112.3 208c-1.5-1.1-3.1-2.3-4.5-3.5-7.7-6.2-15.9-11.9-23.9-17.5-1.6-1.1-3.3-2.3-4.9-3.4-10.2-7.1-19.3-10.6-28-10.6-11.6 0-21.8 6.4-30.2 19.1-3.7 5.6-8.2 8.4-13.8 8.4-3.3 0-7-.9-11.1-2.8-32.8-14.9-56.3-37.7-69.7-67.9-6.5-14.6-4.4-24.1 7-31.8 6.5-4.4 18.5-12.6 17.7-28.3-1-17.8-40.2-71.3-56.8-77.4-7-2.6-14.4-2.6-21.9-.1-19 6.4-32.7 17.6-39.5 32.5-6.4 14.3-6.1 31.2 1 48.7 20.6 50.7 49.7 94.8 86.2 131.3 35.8 35.7 79.8 64.9 130.8 86.9 4.6 2 9.4 3.1 12.9 3.8 1.2.3 2.2.5 3 .7.4.1.8.2 1.3.2h.4c24 0 52.8-21.9 61.6-46.9 7.9-21.9-6.3-32.7-17.6-41.4zM186.7 83.6c-4.1.1-12.7.3-15.7 9-1.4 4.1-1.2 7.6.5 10.5 2.5 4.3 7.4 5.6 11.9 6.3 16.1 2.6 24.4 11.5 26 28 .8 7.7 6 13.1 12.6 13.1.5 0 1 0 1.5-.1 8-1 11.9-6.8 11.5-17.5.1-11.1-5.7-23.7-15.6-33.8-9.9-10.1-21.8-15.8-32.7-15.5z" /></svg></a><a class="top-line-social-link" href="#"><svg class="top-line-social-link-icon vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548.4 548.4">
+                                        <path d="M545.5 400.3c-.7-1.4-1.3-2.6-1.9-3.6-9.5-17.1-27.7-38.2-54.5-63.1l-.6-.6-.3-.3-.3-.3h-.3c-12.2-11.6-19.9-19.4-23.1-23.4-5.9-7.6-7.2-15.3-4-23.1 2.3-5.9 10.9-18.4 25.7-37.4 7.8-10.1 14-18.2 18.6-24.3 32.9-43.8 47.2-71.8 42.8-83.9l-1.7-2.8c-1.1-1.7-4.1-3.3-8.8-4.7-4.8-1.4-10.9-1.7-18.3-.7l-82.2.6c-1.3-.5-3.2-.4-5.7.1-2.5.6-3.7.9-3.7.9l-1.4.7-1.1.9c-1 .6-2 1.6-3.1 3s-2.1 3.1-2.8 5c-9 23-19.1 44.4-30.6 64.2-7 11.8-13.5 22-19.4 30.7-5.9 8.7-10.8 15-14.8 19.1-4 4.1-7.6 7.4-10.9 9.8-3.2 2.5-5.7 3.5-7.4 3.1-1.7-.4-3.3-.8-4.9-1.1-2.7-1.7-4.8-4-6.4-7-1.6-3-2.7-6.7-3.3-11.1-.6-4.5-.9-8.3-1-11.6-.1-3.2 0-7.8.1-13.7.2-5.9.3-9.9.3-12 0-7.2.1-15.1.4-23.6.3-8.5.5-15.2.7-20.1.2-4.9.3-10.2.3-15.7s-.3-9.8-1-13c-.7-3.1-1.7-6.2-3-9.1-1.3-2.9-3.3-5.2-5.9-6.9-2.6-1.6-5.8-2.9-9.6-3.9-10.1-2.3-22.9-3.5-38.5-3.7-35.4-.4-58.1 1.9-68.2 6.9-4 2.1-7.6 4.9-10.8 8.6-3.4 4.2-3.9 6.5-1.4 6.9 11.4 1.7 19.5 5.8 24.3 12.3l1.7 3.4c1.3 2.5 2.7 6.9 4 13.1 1.3 6.3 2.2 13.2 2.6 20.8.9 13.9.9 25.8 0 35.7-1 9.9-1.9 17.6-2.7 23.1-.9 5.5-2.1 10-3.9 13.4-1.7 3.4-2.9 5.5-3.4 6.3-.6.8-1 1.2-1.4 1.4-2.5.9-5 1.4-7.7 1.4s-5.9-1.3-9.7-4c-3.8-2.7-7.8-6.3-11.8-11-4.1-4.7-8.7-11.2-13.9-19.6-5.1-8.4-10.5-18.3-16-29.7l-4.6-8.3c-2.9-5.3-6.8-13.1-11.7-23.3-5-10.2-9.3-20-13.1-29.6-1.5-4-3.8-7-6.9-9.1l-1.4-.9c-.9-.8-2.5-1.6-4.6-2.4-2.1-.9-4.3-1.5-6.6-1.9l-78.2.6c-8 0-13.4 1.8-16.3 5.4l-1.1 1.7c-.6 1-.9 2.5-.9 4.6 0 2.1.6 4.7 1.7 7.7 11.4 26.8 23.8 52.7 37.3 77.7s25.1 45 35 60.2c9.9 15.2 20 29.6 30.3 43.1s17.1 22.2 20.4 26c3.3 3.8 6 6.7 7.9 8.6l7.1 6.9c4.6 4.6 11.3 10 20.1 16.4 8.9 6.4 18.7 12.7 29.4 18.9 10.8 6.2 23.3 11.2 37.5 15.1 14.3 3.9 28.2 5.5 41.7 4.7h32.8c6.7-.6 11.7-2.7 15.1-6.3l1.1-1.4c.8-1.1 1.5-2.9 2.1-5.3.7-2.4 1-5 1-7.9-.2-8.2.4-15.6 1.9-22.1 1.4-6.6 3-11.5 4.9-14.8 1.8-3.3 3.9-6.1 6.1-8.4 2.3-2.3 3.9-3.7 4.9-4.1.9-.5 1.7-.8 2.3-1 4.6-1.5 9.9 0 16.1 4.4 6.2 4.5 12 10 17.4 16.6 5.4 6.6 11.9 13.9 19.6 22.1 7.6 8.2 14.3 14.3 20 18.3l5.7 3.4c3.8 2.3 8.8 4.4 14.9 6.3 6.1 1.9 11.4 2.4 16 1.4l73.1-1.1c7.2 0 12.9-1.2 16.8-3.6 4-2.4 6.4-5 7.1-7.9.8-2.9.8-6.1.1-9.7-.8-3.5-1.5-6-2.1-7.4z" /></svg></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none overlay"></div>
+        <div class="bottom-line-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bottom-line"><a class="bottom-line-logo" href="#"><img class="d-none d-md-block" src="assets/img/icons/logo.svg" alt="Мастер потолков" /><img class="d-block d-md-none" src="assets/img/icons/logo-mobile.svg" alt="Мастер потолков" /></a><span class="bottom-line-text">по версии газеты<br/>комсомольская<br/>правда</span>
+                            <div class="d-none d-md-block bottom-line-img-wrapper"><img class="bottom-line-img" src="assets/img/peoples-choice.png" alt="народный выбор" /></div>
+                            <div class="d-none d-md-block bottom-line-nav-wrapper">
+                                <ul class="bottom-line-nav">
+                                    <li><a class="bottom-line-nav-link bottom-line-nav-link-active" href="#">Каталог</a>
+                                        <ul>
+                                            <li><a href="#">Название</a></li>
+                                            <li><a href="#">Тип</a></li>
+                                            <li><a href="#">Страна&nbsp;производитель</a></li>
+                                            <li><a href="#">Материал</a></li>
+                                            <li><a href="#">Производитель</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="bottom-line-nav-link" href="#">Услуги</a>
+                                        <ul>
+                                            <li><a href="#">Монтаж</a></li>
+                                            <li><a href="#">Ремонт</a>
+                                                <ul>
+                                                    <li><a href="#">Ремонта&nbsp;после&nbsp;пореза</a></li>
+                                                    <li><a href="#">Ремонта&nbsp;после&nbsp;затопления</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Гарантийное&nbsp;обслуживание</a></li>
+                                            <li><a href="#">Сервисное&nbsp;обслуживание</a></li>
+                                            <li><a href="#">Рассрочка</a></li>
+                                            <li><a href="#">Вызов&nbsp;замерщика</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="bottom-line-nav-link" href="#">Покупателям</a>
+                                        <ul>
+                                            <li><a href="#">Калькулятор</a></li>
+                                            <li><a href="#">Акции</a></li>
+                                            <li><a href="#">3D&nbsp;визуализация</a></li>
+                                            <li><a href="#">Прайс лист</a></li>
+                                            <li><a href="#">Подбор цвета</a></li>
+                                            <li><a href="#">Фотогалерея</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-none d-md-inline"><a class="bottom-line-nav-link" href="#">О компании</a>
+                                        <ul>
+                                            <li><a href="#">Вакансии</a></li>
+                                            <li><a href="#">Новости</a></li>
+                                            <li><a href="#">Статьи</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Отзывы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="bottom-line-nav-link" href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="bottom-line-info"><span>Адрес: ул. Безлимитная 105/102</span>
+                                <span><i></i>
+<a href="tel:+7 (499) 649 76 85">+7 (499) 649 76 85</a></span>
+                                <span>Ежедневно 9:00 - 19:00</span></div>
+                            <div class="hot-line"><a class="phone_substitutemsk" href="tel:+78002221056">8 800 222 10 56</a><svg class="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                                    <path class="burger-open" d="M0 4.5h25v3H0v-3zM0 11h25v3H0v-3zm0 6.5h25v3H0v-3z" />
+                                    <path class="d-none burger-close" d="M-.016 1.964l1.98-1.98 23.051 23.052-1.98 1.98z" />
+                                    <path class="d-none burger-close" d="M-.016 23.036L23.036-.016l1.98 1.98L1.963 25.016z" />
+                                </svg>
+                                <span>Звонок по России беспалтный</span></div>
+                        </div>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-menu-link" href="#">Каталог</a>
+                                    <div class="dropdown-submenu"><a class="dropdown-submenu-back" href="#">Каталог</a>
+                                        <ul>
+                                            <li><a href="#">Назначение</a></li>
+                                            <li><a href="#">Тип</a></li>
+                                            <li><a href="#">Страна производитель</a></li>
+                                            <li><a href="#">Материал</a></li>
+                                            <li><a href="#">Производитель</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="dropdown-menu-link" href="#">Услуги</a>
+                                    <div class="dropdown-submenu"><a class="dropdown-submenu-back" href="#">Услуги</a>
+                                        <ul>
+                                            <li><a href="#">Монтаж</a></li>
+                                            <li><a href="#">Ремонт</a>
+                                                <ul>
+                                                    <li><a href="#">Ремонт после пореза</a></li>
+                                                    <li><a href="#">Ремонт после затопления</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Гарантийное обслуживание</a></li>
+                                            <li><a href="#">Сервисное обслуживание</a></li>
+                                            <li><a href="#">Рассрочка</a></li>
+                                            <li><a href="#">Вызов замерщика</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="dropdown-menu-link" href="#">Покупателям</a>
+                                    <div class="dropdown-submenu"><a class="dropdown-submenu-back" href="#">Покупателям</a>
+                                        <ul>
+                                            <li><a href="#">Калькулятор</a></li>
+                                            <li><a href="#">Акции!</a></li>
+                                            <li><a href="#">3D визуализация</a></li>
+                                            <li><a href="#">Прайс лист</a></li>
+                                            <li><a href="#">Подбор цвета</a></li>
+                                            <li><a href="#">Фото галерея</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="dropdown-menu-link" href="#">Контакты</a>
+                                    <div class="dropdown-submenu"><a class="dropdown-submenu-back" href="#">О компании</a>
+                                        <ul>
+                                            <li><a href="#">Вакансии</a></li>
+                                            <li><a href="#">Новости</a></li>
+                                            <li><a href="#">Статьи</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Отзывы</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="dropdown-menu-link" href="https://habr.com/ru/post/242695/">Тестовый пункт</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="col-12">
+            <div class="sale">
+                <div class="wow fadeInLeft sale-text"><span class="sale-heading">Натяжной потолок в&nbsp;ванной комнате</span>
+                    <div class="sale-offer">от
+                        <span class="sale-offer-old-price">350</span>
+                        <span class="sale-offer-new-price">199</span>
+                        р/м²<span class="sale-offer-deadline">Акция только до
+<b>30.05</b></span>
+                    </div>
+                    <ul class="sale-benefits">
+                        <li>монтаж по ГОСТ</li>
+                        <li>100% без запаха</li>
+                    </ul>
+                </div>
+                <div class="sale-icons">
+                    <div class="wow fadeInLeft sale-icon" data-wow-delay="0.3s" data-wow-offset="0"><svg class="showSvgShape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
+                            <path fill="none" stroke="#E5046A" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" d="M49.5.5C22.6.5.5 22.8.5 50s22.1 49.5 49 49.5" /></svg>
+                        <span class="sale-icon-numeral">40<sup>%</sup></span><span class="sale-icon-text">экономии</span></div>
+                    <div class="wow fadeInLeft sale-icon" data-wow-delay="0.6s" data-wow-offset="0"><svg class="showSvgShape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
+                            <path fill="none" stroke="#E5046A" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" d="M49.5.5C22.6.5.5 22.8.5 50s22.1 49.5 49 49.5" /></svg>
+                        <span class="sale-icon-numeral">20<sup>лет</sup></span><span class="sale-icon-text">гарантии</span></div>
+                    <div class="wow fadeInLeft sale-icon" data-wow-delay="0.9s" data-wow-offset="0"><svg class="showSvgShape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
+                            <path fill="none" stroke="#E5046A" stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="10" d="M49.5.5C22.6.5.5 22.8.5 50s22.1 49.5 49 49.5" /></svg>
+                        <span class="sale-icon-numeral">2<sup>дня</sup></span><span class="sale-icon-text">от&nbsp;заказа до&nbsp;установки</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sale-form-wrapper">
+        <div class="sale-form">
+            <form action="">
+                <legend>заказать потолок по&nbsp;акции<span>Успей до конца акции! Только до 30.05</span></legend><input type="text" placeholder="Ваше имя" /><input class="add-phone-mask" type="tel" placeholder="Ваше телефон" /><button>Заказать</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-7 offset-sm-5 col-lg-12 offset-lg-0"><span class="screen-heading calculator-heading wow fadeInUp">Онлайн калькулятор</span><span class="screen-description calculator-heading wow fadeInUp">Узнайте стоимость натяжного<br/>потолка с установкой</span></div>
+            <div class="col-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 position-relative">
+                <div class="rellax iphone" style="background-image: url(assets/img/phone.png); transform: rotate(16deg);" data-rellax-speed="1" data-rellax-percentage="0.4"></div>
+                <div class="rellax iphone-shadow" style="background-image: url(assets/img/phone-shadow.png)" data-rellax-speed="1" data-rellax-percentage="0.4"></div>
+                <form class="calculator wow fadeInUp">
+                    <div class="calculator-fieldset"><label for="amount-range">Количество<br/>потолков /шт.</label>
+                            <div class="calculator-fieldset-range d-none d-xl-block"><input id="amount-range" type="range" min="1" step="1" max="30" value="4" data-rangeslider="data-rangeslider" /></div>
+                            <div class="calculator-fieldset-number"><a class="d-inline-block" href="#"><span>-</span></a><input id="amount-input" type="number" value="4" min="1" step="1" max="30" /><a class="d-inline-block" href="#" data-increment="data-increment"><span>+</span></a></div>
+                    </div>
+                    <div class="calculator-fieldset"><label for="area-range">Общая<br/>площадь /м².</label>
+                            <div class="calculator-fieldset-range d-none d-xl-block"><input id="area-range" type="range" min="1" step="1" max="500" value="74" data-rangeslider="data-rangeslider" /></div>
+                            <div class="calculator-fieldset-number"><a class="d-inline-block" href="#"><span>-</span></a><input id="area-input" type="number" value="74" min="1" step="1" max="500" /><a class="d-inline-block" href="#" data-increment="data-increment"><span>+</span></a></div>
+                    </div>
+                    <div class="calculator-fieldset"><label for="surface">Покрытие</label>
+                        <div class="calculator-fieldset-select"><select id="surface" name="surface-type">
+                                <option value="mat">Матовый</option>
+                                <option value="glossy">Глянцевый</option>
+                            </select></div>
+                    </div>
+                    <div class="calculator-fieldset"><label for="room">Тип<br/>помещения</label>
+                            <div class="calculator-fieldset-select"><select id="room" name="room-type">
+                                    <option value="New">Новостройка</option>
+                                    <option value="Old">Вторичка</option>
+                                </select></div>
+                    </div><span class="calculator-price"><span>Примерная стоимость</span><b>от 40 875 ₽ до 57620</b><span class="d-none d-sm-inline-block calculator-price-question"><span class="calculator-question-icon">?</span>От чего зависит стоимость?<span class="calculator-price-answer">Стоимость варьируется в&nbsp;зависимости от&nbsp;производителя полотна, цвета и&nbsp;фактуры</span></span></span>
+                    <div class="calculator-fieldset"><label for="color">Цвет</label>
+                        <div class="calculator-fieldset-select"><select id="color" name="color">
+                                <option value="White">Белый</option>
+                                <option value="Colored">Цветной</option>
+                            </select></div>
+                    </div><a class="calculator-button" data-fancybox="calculator" data-src="#popup-calculator">Получить точную смету<br/><b>онлайн</b></a>
+                    <div class="calculator-question d-none d-md-block"><span class="calculator-question-icon">?</span><b>Что входит в стоимость:</b>Замер, доставка, материал (полотна и профиль), установка (профиля и полотна).</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="wow fadeInUp tabs">
+                    <div class="d-flex d-md-none tabs-buttons"><a href="#">скачать прайс</a><a href="#">скачать каталог</a></div><input type="radio" name="tabs" checked="checked" id="tab-1" /><label for="tab-1">FAQ</label><input type="radio" name="tabs" id="tab-2" /><label class="d-none d-md-inline-block" for="tab-2">Прайс</label><input type="radio" name="tabs" id="tab-3" /><label class="d-none d-md-inline-block" for="tab-3">Скачать каталоги</label>
+                    <div class="tabs-content" id="tab-content-1">
+                        <div class="tabs-faq"><span class="tabs-faq-heading">Вопросы и ответы</span>
+                            <div class="tabs-faq-question"><input type="checkbox" id="question-1" /><label for="question-1"><span>Где можно использовать глянцевые натяжные потолки?</span></label><span class="tabs-faq-answer">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reiciendis ipsum minima doloremque ea quaerat mollitia. Ad, omnis? Officiis vitae nisi aliquid soluta asperiores cum est assumenda magnam perspiciatis inventore.Debitis, nemo culpa ipsam quasi beatae repellendus, alias quo adipisci eum nostrum nam quisquam autem odio officia asperiores quaerat deleniti quibusdam et distinctio corporis tempore illo ratione magnam sit?</span></div>
+                            <div class="tabs-faq-question"><input type="checkbox" id="question-2" /><label for="question-2"><span>Где можно использовать глянцевые натяжные потолки?</span></label><span class="tabs-faq-answer">hello</span></div>
+                            <div class="tabs-faq-question"><input type="checkbox" id="question-3" /><label for="question-3"><span>Где можно использовать глянцевые натяжные потолки?</span></label><span class="tabs-faq-answer">hello</span></div>
+                            <div class="tabs-faq-question"><input type="checkbox" id="question-4" /><label for="question-4"><span>Где можно использовать глянцевые натяжные потолки?</span></label><span class="tabs-faq-answer">hello</span></div>
+                            <div class="tabs-faq-question"><input type="checkbox" id="question-5" /><label for="question-5"><span>Где можно использовать глянцевые натяжные потолки?</span></label><span class="tabs-faq-answer">hello</span></div>
+                        </div>
+                        <div class="tabs-person"></div>
+                    </div>
+                    <div class="tabs-content" id="tab-content-2">
+                        <table class="tabs-content-table">
+                            <thead>
+                                <th>Фактуры</th>
+                                <th>коллекция Эконом</th>
+                                <th>коллекция Eco line</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>Матовый</b></td>
+                                    <td>от 199 р/м2</td>
+                                    <td>от 320 р/м2</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Глянцевый</b></td>
+                                    <td>от 199 р/м2</td>
+                                    <td>от 320 р/м2</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Сатиновый</b></td>
+                                    <td>от 199 р/м2</td>
+                                    <td>от 320 р/м2</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Тканевый</b></td>
+                                    <td colspan="2">от 1990 р/м2</td>
+                                </tr>
+                            </tbody>
+                            <tr>
+                                <td colspan="3"><b>Монтажные работы</b></td>
+                            </tr>
+                            <tr>
+                                <td><b>Профиль ПВХ</b></td>
+                                <td colspan="2">300 р/м.п.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Профиль алюм.</b></td>
+                                <td colspan="2">350 р/м.п.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Монтаж люстры на крючке</b></td>
+                                <td colspan="2">400 р.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Обход углов</b></td>
+                                <td colspan="2">250 р.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Обход трубы</b></td>
+                                <td colspan="2">300 р.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tabs-content" id="tab-content-3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="get-pdf"><span class="d-none d-md-block get-pdf-description">Получите каталоги с ценами и самым полным ассортиментов<br/>цветов и фактур на email/viber/whatsapp/telegram</span>
+                                        <form class="get-pdf-form">
+                                            <div class="d-none d-md-flex"><i style="background-image: url(assets/img/icons/promocode.svg)"></i><span>Секретный промокод от менеджерана бесплатный монтаж люстры или карниза
+для штор (экономия до 2000 руб!)</span></div>
+                                            <div class="d-none d-md-flex"><i style="background-image: url(assets/img/icons/catalog.svg)"></i><span>Каталог с подборками<br/>по типам и фактурам</span></div>
+                                            <div><input type="text" placeholder="Имя" required="required" /><i style="background-image: url(assets/img/icons/user.png)"></i></div>
+                                            <div class="d-none d-md-flex"><i style="background-image: url(assets/img/icons/pricelist.svg)"></i><span>Актуальный  прайслист<br/>(цены обновлены 2 дня назад)</span></div>
+                                            <div><input class="messengers-input add-phone-mask" type="tel" placeholder="Телефон" required="required" /><i style="background-image: url(assets/img/icons/phone-magenta.png)"></i></div>
+                                            <div><button>Получить каталоги</button></div><label class="d-none d-md-block">Я согласен на получение<br/>информации от Мастер Потолков<br/><a href="#">Изменить настройки</a><input type="checkbox" checked="checked" required="required" /><span class="checkmark"></span></label><label class="d-none d-md-block">Нажимая на кнопку, я даю согласие на обработку<br/>персональных данных и соглашаюсь с<br/><a href="#">пользовательским соглашением</a>
+
+                                                и<br/><a href="#">политикой конфиденциальности</a><input type="checkbox" checked="checked" required="required" /><span class="checkmark"></span></label>
+                                        </form><img class="rellax" src="assets/img/catalog.png" alt="каталог" data-rellax-speed="1" data-rellax-percentage="0.5" />
+                                        <div class="get-pdf-arrow">
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 133.5 190" style="enable-background:new 0 0 133.5 190;" xml:space="preserve">
+
+                                                <path stroke="#BABABA" fill="none" stroke-width="0.5" stroke-linecap="square" stroke-miterlimit="10" stroke-dasharray="2" d="M3.8,182.9c73.6-20.2,124-71.1,127-125.7c0.4-11.8-0.8-32-14.7-56.8" />
+                                                <polygon stroke="#BABABA" points="19,189.9 2.2,183.4 10,166.6 10.4,166.8 2.8,183.2 19.2,189.5 " />
+                                            </svg>
+                                        </div><svg class="d-block d-sm-none get-pdf-corner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545 65">
+                                            <path stroke="#e8e8e8" stroke-width="3" fill="#e8e8e8" d="M272.5 55L0 0v5l272.5 55L545 5V0z" /></svg></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="wow fadeInUp ready-solutions"><span class="gallery-heading">примеры готовых работ</span><span class="gallery-description">топ-5 самых популярных решений</span>
+                    <div class="ready-solutions-grid">
+                        <div class="swiper-wrapper">
+                            <div class="ready-solutions-grid-item">
+                                <div class="ready-solutions-grid-item-image"><img src="assets/img/catalog-sample-image-1.jpg" /></div>
+                                <div class="ready-solutions-grid-item-table">
+                                    <table>
+                                        <caption>БЕЛЫЙ МАТОВЫЙ ПОТОЛОК В&nbsp;ПРИХОЖУЮ 15м²</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Материалы и&nbsp;работа</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Полотно коллекции «Baseline»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Профиль до&nbsp;10&nbsp;м.п</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Установка точечного светильника с&nbsp;проводкой, 3&nbsp;шт</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Углы, 4&nbsp;шт.</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Замер, доставка</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-sale">
+                                                <td>Скидка
+                                                    <b>39%</b>
+                                                    до&nbsp;25 сентября</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-total">
+                                                <td>Итого</td>
+                                                <td>1500</td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-credit">
+                                                <td>В рассрочку<br/>на&nbsp;6 мес. под&nbsp;0%</td>
+                                                <td>500</td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-halva">
+                                                <td>Оплати картой</td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="ready-solutions-grid-item">
+                                <div class="ready-solutions-grid-item-image"><img src="assets/img/catalog-sample-image-1.jpg" /></div>
+                                <div class="ready-solutions-grid-item-table">
+                                    <table>
+                                        <caption>БЕЛЫЙ МАТОВЫЙ ПОТОЛОК В&nbsp;ПРИХОЖУЮ 15м²</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Материалы и&nbsp;работа</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Полотно коллекции «Baseline»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Профиль до&nbsp;10&nbsp;м.п</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Установка точечного светильника с&nbsp;проводкой, 3&nbsp;шт</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Углы, 4&nbsp;шт.</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Замер, доставка</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-sale">
+                                                <td>Скидка
+                                                    <b>39%</b>
+                                                    до&nbsp;25 сентября</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-total">
+                                                <td>Итого</td>
+                                                <td>1500</td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-credit">
+                                                <td>В рассрочку<br/>на&nbsp;6 мес. под&nbsp;0%</td>
+                                                <td>500</td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-halva">
+                                                <td>Оплати картой</td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="ready-solutions-grid-item">
+                                <div class="ready-solutions-grid-item-image"><img src="assets/img/catalog-sample-image-1.jpg" /></div>
+                                <div class="ready-solutions-grid-item-table">
+                                    <table>
+                                        <caption>БЕЛЫЙ МАТОВЫЙ ПОТОЛОК В&nbsp;ПРИХОЖУЮ 15м²</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Материалы и&nbsp;работа</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Полотно коллекции «Baseline»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Профиль до&nbsp;10&nbsp;м.п</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Установка точечного светильника с&nbsp;проводкой, 3&nbsp;шт</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Углы, 4&nbsp;шт.</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Замер, доставка</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-sale">
+                                                <td>Скидка
+                                                    <b>39%</b>
+                                                    до&nbsp;25 сентября</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-total">
+                                                <td>Итого</td>
+                                                <td>1500</td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-credit">
+                                                <td>В рассрочку<br/>на&nbsp;6 мес. под&nbsp;0%</td>
+                                                <td>500</td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-halva">
+                                                <td>Оплати картой</td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="ready-solutions-grid-item">
+                                <div class="ready-solutions-grid-item-image"><img src="assets/img/catalog-sample-image-1.jpg" /></div>
+                                <div class="ready-solutions-grid-item-table">
+                                    <table>
+                                        <caption>БЕЛЫЙ МАТОВЫЙ ПОТОЛОК В&nbsp;ПРИХОЖУЮ 15м²</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>Материалы и&nbsp;работа</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Полотно коллекции «Baseline»</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Профиль до&nbsp;10&nbsp;м.п</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Установка точечного светильника с&nbsp;проводкой, 3&nbsp;шт</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Углы, 4&nbsp;шт.</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Замер, доставка</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-sale">
+                                                <td>Скидка
+                                                    <b>39%</b>
+                                                    до&nbsp;25 сентября</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-total">
+                                                <td>Итого</td>
+                                                <td>1500</td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-credit">
+                                                <td>В рассрочку<br/>на&nbsp;6 мес. под&nbsp;0%</td>
+                                                <td>500</td>
+                                            </tr>
+                                            <tr class="ready-solutions-grid-item-table-halva">
+                                                <td>Оплати картой</td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-xxl-none ready-solutions-grid-button ready-solutions-grid-button-prev"></div>
+                        <div class="d-xxl-none ready-solutions-grid-button ready-solutions-grid-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="wow fadeInUp gallery"><span class="gallery-heading">Фотогалерея</span><span class="gallery-description">готовых работ</span>
+                    <div class="gallery-grid">
+                        <div class="swiper-wrapper">
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                            <div class="gallery-grid-item"><a data-fancybox="catalog-inner-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg"><img src="assets/img/catalog-sample-image-1.jpg" /></a></div>
+                        </div>
+                        <div class="d-sm-none ready-solutions-grid-button ready-solutions-grid-button-prev"></div>
+                        <div class="d-sm-none ready-solutions-grid-button ready-solutions-grid-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback">
+        <div class="d-none d-md-block feedback-like wow fadeInLeft"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><span class="screen-heading feedback-heading wow fadeInUp"><span>Примеры работ и отзывы клиентов</span></span><span class="screen-description feedback-description wow fadeInUp">Посмотрите реальные фотографии натяжных потолков,<br/>установленных в квартирах и домах наших клиентов.</span><span class="d-none d-md-block feedback-hashtag wow fadeInRight">#спасибомастерпотолков</span></div>
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="feedback-items-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="feedback-item-wrapper">
+                                <div class="feedback-item wow fadeInLeft">
+                                    <div class="feedback-item-rating">
+                                        <div class="feedback-item-rating-stars"><i></i><i></i><i></i><i></i><i></i></div><span>Оценка заказчика</span>
+                                    </div><span class="feedback-item-name">Потолок в коридор Потолок в коридор<span class="feedback-item-area">14 м²</span></span><span class="feedback-item-options"><span class="feedback-item-options-prev">Влючено:</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span></span>
+                                    <div class="feedback-item-price">Стоимость:<br/><span>5 960
+<span class="rubl">₽</span></span></div>
+                                    <div class="feedback-item-city">г. Москва<br/>ул Большая Грузинская 32</div>
+                                        <div class="feedback-item-images"><a class="d-none d-md-flex feedback-button feedback-button-like" href="#"><i style="background-image: url(assets/img/icons/heart.svg)"></i><span>15</span></a>
+                                            <div class="feedback-swiper s1">
+                                                <div class="swiper-wrapper"><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-1"><img src="assets/img/feedback-1.jpg" alt="" /></a><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-1"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                        <div class="swiper-lazy-preloader"></div>
+                                                    </a><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-1"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                        <div class="swiper-lazy-preloader"></div>
+                                                    </a><a class="feedback-swiper-slide feedback-swiper-slide-video" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="feedback-gallery-1"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                        <div class="swiper-lazy-preloader"></div>
+                                                    </a></div>
+                                            </div>
+                                            <div class="feedback-thumbs t1">
+                                                <div class="swiper-wrapper">
+                                                    <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                    <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                    <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                    <div class="feedback-thumbs-thumb feedback-thumbs-thumb-video"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedback-item-wrapper">
+                                    <div class="feedback-item wow fadeInRight">
+                                        <div class="feedback-item-rating">
+                                            <div class="feedback-item-rating-stars"><i></i><i></i><i></i><i></i><i></i></div><span>Оценка заказчика</span>
+                                        </div><span class="feedback-item-name">Потолок в коридор<span class="feedback-item-area">14 м²</span></span><span class="feedback-item-options"><span class="feedback-item-options-prev">Влючено:</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span></span>
+                                        <div class="feedback-item-price"><span>5 960
+<span class="rubl">₽</span></span></div>
+                                        <div class="feedback-item-city">г. Москва<br/>ул Большая Грузинская 32</div>
+                                            <div class="feedback-item-images"><a class="d-none d-md-flex feedback-button feedback-button-like" href="#"><i style="background-image: url(assets/img/icons/heart.svg)"></i><span>15</span></a>
+                                                <div class="feedback-swiper s2">
+                                                    <div class="swiper-wrapper"><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-2"><img src="assets/img/feedback-1.jpg" alt="" /></a><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-2"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-2"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a><a class="feedback-swiper-slide feedback-swiper-slide-video" href="https://www.youtube.com/watch?v=LsJkJWn0_JM" data-fancybox="feedback-gallery-2"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a></div>
+                                                </div>
+                                                <div class="feedback-thumbs t2">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb feedback-thumbs-thumb-video"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-item-wrapper">
+                                        <div class="feedback-item wow fadeInLeft">
+                                            <div class="feedback-item-rating">
+                                                <div class="feedback-item-rating-stars"><i></i><i></i><i></i><i></i><i></i></div><span>Оценка заказчика</span>
+                                            </div><span class="feedback-item-name">Потолок в коридор
+<span class="feedback-item-area">14 м²</span></span><span class="feedback-item-options"><span class="feedback-item-options-prev">Влючено:</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span></span>
+                                            <div class="feedback-item-price"><span>5 960
+<span class="rubl">₽</span></span></div>
+                                            <div class="feedback-item-city">г. Москва</div>
+                                            <div class="feedback-item-images"><a class="d-none d-md-flex feedback-button feedback-button-like" href="#"><i style="background-image: url(assets/img/icons/heart.svg)"></i><span>15</span></a>
+                                                <div class="feedback-swiper s3">
+                                                    <div class="swiper-wrapper"><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-3"><img src="assets/img/feedback-1.jpg" alt="" /></a><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-3"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-3"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a><a class="feedback-swiper-slide feedback-swiper-slide-video" href="https://www.youtube.com/watch?v=LsJkJWn0_JM" data-fancybox="feedback-gallery-3"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a></div>
+                                                </div>
+                                                <div class="feedback-thumbs t3">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb feedback-thumbs-thumb-video"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-item-wrapper">
+                                        <div class="feedback-item wow fadeInRight">
+                                            <div class="feedback-item-rating">
+                                                <div class="feedback-item-rating-stars"><i></i><i></i><i></i><i></i><i></i></div><span>Оценка заказчика</span>
+                                            </div><span class="feedback-item-name">Потолок в коридор
+<span class="feedback-item-area">14 м²</span></span><span class="feedback-item-options"><span class="feedback-item-options-prev">Влючено:</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span><span>Полотно: L512</span></span>
+                                            <div class="feedback-item-price"><span>5 960
+<span class="rubl">₽</span></span></div>
+                                            <div class="feedback-item-city">г. Москва</div>
+                                            <div class="feedback-item-images"><a class="d-none d-md-flex feedback-button feedback-button-like" href="#"><i style="background-image: url(assets/img/icons/heart.svg)"></i><span>15</span></a>
+                                                <div class="feedback-swiper s4">
+                                                    <div class="swiper-wrapper"><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-4"><img src="assets/img/feedback-1.jpg" alt="" /></a><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-4"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a><a class="feedback-swiper-slide" href="assets/img/feedback-1.jpg" data-fancybox="feedback-gallery-4"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a><a class="feedback-swiper-slide feedback-swiper-slide-video" href="https://www.youtube.com/watch?v=LsJkJWn0_JM" data-fancybox="feedback-gallery-4"><img class="swiper-lazy" data-src="assets/img/feedback-1.jpg" alt="" />
+                                                            <div class="swiper-lazy-preloader"></div>
+                                                        </a></div>
+                                                </div>
+                                                <div class="feedback-thumbs t4">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                        <div class="feedback-thumbs-thumb feedback-thumbs-thumb-video"><img src="assets/img/feedback-1.jpg" alt="" /></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedback-items-swiper-nav">
+                                    <div class="feedback-items-swiper-button feedback-items-swiper-button-prev"></div>
+                                    <div class="feedback-items-swiper-pagination"></div>
+                                    <div class="feedback-items-swiper-button feedback-items-swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="feedback-see-more wow fadeInUp"><a href="#">Смотреть все отзывовы</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-7 col-md-5 col-xl-4 offset-lg-1">
+                            <div class="wow fadeInLeft measurement-text"><span>Бесплатный замер с&nbsp;точностью до&nbsp;миллиметра и&nbsp;всего за&nbsp;15-20 минут</span>
+                                <p>Ваш потолок будет смонтирован с&nbsp;первого раза без&nbsp;переделок благодаря точному замеру и&nbsp;отсутствию ошибок.</p>
+                                <p>Просто оставьте заявку и&nbsp;замерщик приедет к&nbsp;вам домой в&nbsp;удобное для&nbsp;вас время.</p>
+                                <p>Вы получаете бесплатно техническую консультацию, точный замер и&nbsp;расчет стоимости. Вам не придется тратить время на&nbsp;посещение офиса.</p>
+                                <p>А&nbsp;еще получите
+                                    <b>бонус 500 рублей,</b>
+
+                                    который суммируется с&nbsp;другими акциями.</p>
+                            </div>
+                            <form class="wow fadeInLeft measurement-form">
+                                <legend>Ваш номер телефона</legend><input class="add-phone-mask" type="tel" placeholder="+7 (___) ___ __ __" /><button>Вызвать замерщика бесплатно</button>
+                            </form>
+                        </div>
+                        <div class="col-5 col-md-6">
+                            <div class="wow fadeInRight measurement-person" style="background-image: url(assets/img//measurement-person.png)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer-catalog">
+                    <div class="container">
+                        <div class="row">
+                            <div class="d-none d-lg-block col-10"><span class="footer-catalog-heading">Каталог потолков</span>
+                                <div class="row">
+                                    <div class="col-3"><span class="footer-catalog-sub-heading">По назначению</span>
+                                        <ul>
+                                            <li><a href="#">В гостинной</a></li>
+                                            <li><a href="#">В спальне</a></li>
+                                            <li><a href="#">В ванной</a></li>
+                                            <li><a href="#">На кухне</a></li>
+                                            <li><a href="#">В прихожей</a></li>
+                                            <li><a href="#">В частном доме</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3"><span class="footer-catalog-sub-heading">По фактуре</span>
+                                        <ul>
+                                            <li><a href="#">Глянцевые</a></li>
+                                            <li><a href="#">Матовые</a></li>
+                                            <li><a href="#">Сатиновые</a></li>
+                                            <li><a href="#">Тканевые</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3"><span class="footer-catalog-sub-heading">Эксклюзивные решения</span>
+                                        <ul>
+                                            <li><a href="#">Двухуровневые</a></li>
+                                            <li><a href="#">Фотопечать</a></li>
+                                            <li><a href="#">С подсветкой</a></li>
+                                            <li><a href="#">Звездное небо</a></li>
+                                            <li><a href="#">Комбинированные</a></li>
+                                            <li><a href="#">Дизайнерские фактуры</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3"><span class="footer-catalog-sub-heading">Бренды</span>
+                                        <ul>
+                                            <li><a href="#">Эко-потолки Pongs (Германия)</a></li>
+                                            <li><a href="#">Polyplast (Бельгия)</a></li>
+                                            <li><a href="#">MSD (Китай)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block col-2"><span class="footer-catalog-heading"><a href="#">О компании</a></span><span class="footer-catalog-heading"><a href="#">Отзывы</a></span><span class="footer-catalog-heading"><a href="#">Акции</a></span><span class="footer-catalog-heading"><a href="#">Покупателям</a></span><span class="footer-catalog-heading"><a href="#">Полезные статьи</a></span><span class="footer-catalog-heading"><a href="#">Контакты</a></span></div>
+                            <div class="d-lg-none col-12">
+                                <div class="footer-mobile">
+                                    <div class="row">
+                                        <div class="col-6 col-md-4 text-left"><a href="#">Правовая информация</a></div>
+                                        <div class="col-6 col-md-4 text-right text-md-center"><a href="#">Политика конфиденциальности</a></div>
+                                        <div class="col-6 col-md-4 text-left text-md-right"><a href="#">Условия акции и предоставления бонусов</a></div>
+                                        <div class="col-6 col-md-12 text-right text-md-center"><a href="#">Юридические реквизиты</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="footer-bottom-text-wrapper"><span class="footer-bottom-text footer-bottom-copyright">© 2014 Мастер Потолков</span><span class="footer-bottom-text">Москва, ул. Ленина, 102</span><span class="footer-bottom-text"><a class="footer-bottom-link" href="tel:+7(495)2725678">+7 (495) 272-56-78</a><a class="footer-bottom-link" href="tel:+7(902)9315473">+7 (902) 931 54 73</a></span></div>
+                            </div>
+                            <div class="col-6 d-flex"><a class="footer-bottom-socials" href="#"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 102.3 48.5" xml:space="preserve">
+                                        <path d="M97.2 48.5h-92c-2.8 0-5.1-2.3-5.1-5.1V5.1C0 2.3 2.3 0 5.1 0h92c2.8 0 5.1 2.3 5.1 5.1v38.2a5 5 0 0 1-5 5.2z" />
+                                        <path fill="#494f61" d="M47.7 32.8c-.6-.4-1.1-1.1-1.3-1.9-.3-1.1-.4-2.2-.4-3.3v-1.9c0-1.1.1-2.3.4-3.4.2-.8.7-1.4 1.3-1.9.7-.4 1.5-.6 2.4-.6.8 0 1.6.2 2.3.6.6.5 1.1 1.1 1.3 1.9.3 1.1.4 2.2.4 3.4v1.9c0 1.1-.1 2.3-.4 3.4-.2.7-.6 1.4-1.3 1.9-.7.4-1.6.6-2.4.6-.9-.1-1.7-.3-2.3-.7zm3.3-2.1c.2-.7.3-1.4.2-2.1v-4.1c0-.7 0-1.4-.2-2.1-.1-.4-.5-.7-.9-.7s-.7.3-.8.7c-.2.7-.3 1.4-.2 2.1v4.1c0 .7 0 1.4.2 2.1.1.4.5.6.9.6.3.1.7-.2.8-.6zm41.9-3.1v.7c0 .6 0 1.3.1 1.9 0 .3.1.6.3.9.2.2.4.3.7.3.4 0 .7-.2.9-.5.2-.5.3-1.1.3-1.7l2.5.1v.5c0 1.2-.3 2.1-1 2.7-.7.6-1.6.9-2.8.9-1.4 0-2.5-.5-3-1.4-.6-.9-.9-2.3-.9-4.2v-2.3c0-2 .3-3.4.9-4.3.6-.9 1.6-1.4 3.1-1.4 1 0 1.8.2 2.3.6.6.4 1 1 1.1 1.7.3 1.1.4 2.2.3 3.3v2.2h-4.8zm.4-5.5c-.2.3-.3.6-.3.9-.1.6-.1 1.3-.1 1.9v.9h2.2V25c0-.6 0-1.3-.1-1.9 0-.3-.1-.6-.3-.9-.2-.2-.4-.3-.7-.3-.3-.1-.5 0-.7.2zm-52.8 5.3l-3.3-12.1h2.9l1.2 5.5c.3 1.3.5 2.5.7 3.5.1-.7.3-1.8.7-3.4l1.2-5.5h2.9l-3.4 12.1v5.8h-2.9v-5.9zm23.2-7.3v13.1h-2.3l-.3-1.6H61c-.6 1.2-1.6 1.8-2.8 1.8-.9 0-1.5-.3-1.9-.9-.4-.6-.6-1.5-.6-2.7V20h2.9v9.6c0 .4 0 .9.2 1.2.1.2.4.4.6.4.3 0 .5-.1.7-.2.2-.1.4-.3.5-.6V20.1h3.1zm15 0v13.1h-2.3l-.3-1.6H76c-.6 1.2-1.6 1.8-2.8 1.8-.9 0-1.5-.3-1.9-.9-.4-.6-.6-1.5-.6-2.7V20h2.9v9.6c0 .4 0 .9.2 1.2.1.2.4.4.6.4.3 0 .5-.1.7-.2.2-.1.4-.3.5-.6V20.1h3.1z" />
+                                        <path fill="#494f61" d="M62.9 17.7h3v15.5h2.8V17.7h3v-2.4h-8.8zM31 14.4c-2.3-.6-11.6-.6-11.6-.6s-9.3 0-11.6.6c-1.3.3-2.3 1.3-2.6 2.6-.6 2.3-.6 7.2-.6 7.2s0 4.8.6 7.2c.3 1.3 1.3 2.3 2.6 2.6 2.3.6 11.6.6 11.6.6s9.3 0 11.6-.6c1.3-.3 2.3-1.3 2.6-2.6.6-2.3.6-7.2.6-7.2s0-4.8-.6-7.2c-.3-1.2-1.3-2.2-2.6-2.6zM16.2 28.7v-8.9l7.7 4.5-7.7 4.4zM88.5 22.2c-.1-.7-.4-1.3-.9-1.8-.5-.4-1-.6-1.6-.6-.5 0-1.1.2-1.5.5-.5.3-.8.7-1.1 1.2v-6.9h-2.8v18.5H83l.3-1.2h.1c.2.4.6.8 1 1 .5.3 1 .4 1.5.4.9 0 1.8-.5 2.2-1.4.5-.9.7-2.3.7-4.3v-2.1c0-1-.1-2.2-.3-3.3zm-2.8 7.6c0 .4-.2.8-.4 1.1-.2.2-.5.4-.7.3-.2 0-.5-.1-.7-.2-.2-.1-.4-.3-.5-.5v-7.4c.1-.3.3-.6.5-.9.2-.2.5-.3.8-.3.3 0 .5.1.7.4.2.4.3.8.3 1.2.1.8.1 1.6.1 2.4v1.7c0 .7-.1 1.4-.1 2.2z" />
+                                    </svg>
+                                </a><a class="footer-bottom-socials" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.5 48.5">
+                                        <path d="M43.4 48.5H5.1c-2.8 0-5.1-2.3-5.1-5.1V5.1C0 2.3 2.3 0 5.1 0h38.3c2.8 0 5.1 2.3 5.1 5.1v38.3c0 2.8-2.3 5.1-5.1 5.1z" />
+                                        <path d="M44.2 12.1h-4.3c-4.9 0-8 3.2-8 8.2v3.8h-4.3c-.4 0-.7.3-.7.7v5.5c0 .4.3.7.7.7H32v16.8c0 .4.3.7.7.7h5.7c.4 0 .7-.3.7-.7V31h4.5c.4 0 .7-.3.7-.7l.6-5.5c0-.2-.1-.4-.2-.5-.1-.1-.3-.2-.5-.2h-5.1v-3.2c0-1.5.4-2.3 2.4-2.3h2.9c.4 0 .7-.3.7-.7v-5.1c-.3-.4-.6-.7-.9-.7z" fill="#494f61" />
+                                    </svg>
+                                </a><a class="footer-bottom-socials" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.5 48.5">
+                                        <path d="M21.1 25.9v5.7c2.9 0 6.6.5 6.6-2.8.1-3.5-3.7-2.9-6.6-2.9zM43.4 0H5.1C2.3 0 0 2.3 0 5.1v38.3c0 2.8 2.3 5.1 5.1 5.1h38.2c2.8 0 5.1-2.3 5.1-5.1V5.1c.1-2.8-2.2-5.1-5-5.1zM25.3 35.8h-9.9V12.9h10.4c3.4 0 6.3 1.7 6.3 5.1 0 2.8-1 3.9-3.1 5.2.2.1 1.4.5 1.8.7.5.3 1 .6 1.5 1.1 1.2 1.2 1.4 2.3 1.4 4.2 0 4.4-4.3 6.6-8.4 6.6zm-4.2-13.9c2.7 0 5.2.4 5.2-2.5 0-2.7-2.8-2.2-5.2-2.2v4.7z" /></svg></a><a class="footer-bottom-socials" href="#"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 48.5 48.5" xml:space="preserve">
+                                        <path d="M43.4 48.5H5.1c-2.8 0-5.1-2.3-5.1-5.1V5.1C0 2.3 2.3 0 5.1 0h38.3c2.8 0 5.1 2.3 5.1 5.1v38.3c0 2.8-2.3 5.1-5.1 5.1z" />
+                                        <path fill="#494f61" d="M32.5 6.2H16.1c-5.3 0-9.6 4.4-9.6 9.8v16.6c0 5.4 4.3 9.8 9.6 9.8h16.3c5.3 0 9.6-4.4 9.6-9.8V16c.1-5.4-4.2-9.8-9.5-9.8zM40 32.6c0 4.2-3.4 7.6-7.5 7.7H16.1c-4.2 0-7.6-3.5-7.5-7.7V16c0-4.2 3.4-7.6 7.5-7.7h16.3c4.2 0 7.6 3.5 7.5 7.7.1 0 .1 16.6.1 16.6z" />
+                                        <path fill="#494f61" d="M24.3 14.4c-5.4 0-9.7 4.5-9.7 9.9s4.4 9.9 9.7 9.9 9.7-4.5 9.7-9.9-4.4-9.9-9.7-9.9zm0 17.7c-4.3.1-7.8-3.4-7.9-7.6-.1-4.3 3.4-7.8 7.6-7.9 4.3-.1 7.9 3.4 7.9 7.7v.1c.1 4.1-3.4 7.6-7.6 7.7zm10-21.2c-1.6 0-2.9 1.3-3 2.9s1.3 2.9 2.9 3c1.6 0 2.9-1.3 3-2.9v-.1c0-1.6-1.3-2.9-2.9-2.9zm0 4.5c-.9 0-1.7-.7-1.7-1.6 0-.9.7-1.7 1.6-1.7.9 0 1.7.7 1.7 1.6 0 1-.8 1.7-1.6 1.7z" />
+                                    </svg>
+                                </a>
+                                <div class="footer-contacts-service"><i></i><span>Сервисная служба<strong>24/7</strong></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="scripts/jquery.min.js"></script>
+            <script>
+                // rates calculator start
+
+                function calculateRates(value) {
+                    const areaValue = value;
+                    const colorValue = $('#color').val();
+
+                    let output = $('.calculator-price b');
+
+                    if (value <= 19) {
+                        if (colorValue == 'White') {
+                            let minValue = areaValue * 500;
+                            let maxValue = areaValue * 2 * 500;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        } else {
+                            let minValue = areaValue * 600;
+                            let maxValue = areaValue * 2 * 600;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        }
+                    } else if (value == 20) {
+                        if (colorValue == 'White') {
+                            let minValue = areaValue * 480;
+                            let maxValue = areaValue * 950;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        } else {
+                            let minValue = areaValue * 580;
+                            let maxValue = areaValue * 1150;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        }
+                    } else if (value == 21) {
+                        if (colorValue == 'White') {
+                            let minValue = areaValue * 480;
+                            let maxValue = areaValue * 950;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        } else {
+                            let minValue = areaValue * 570;
+                            let maxValue = areaValue * 1150;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        }
+                    } else if (value == 22) {
+                        if (colorValue == 'White') {
+                            let minValue = areaValue * 470;
+                            let maxValue = areaValue * 950;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        } else {
+                            let minValue = areaValue * 550;
+                            let maxValue = areaValue * 1150;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        }
+                    } else if (value >= 23) {
+                        if (colorValue == 'White') {
+                            let minValue = areaValue * 450;
+                            let maxValue = areaValue * 950;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        } else {
+                            let minValue = areaValue * 550;
+                            let maxValue = areaValue * 1150;
+                            output.text('от ' + minValue + ' до ' + maxValue)
+                        }
+                    }
+                }
+
+                let inputArea = $('#area-input');
+
+                inputArea.on('change', function() {
+                    calculateRates(inputArea.val());
+                });
+
+                let selectColor = $('#color');
+
+                selectColor.on('change', function() {
+                    calculateRates(inputArea.val());
+                });
+
+                $(document).ready(function() {
+                    calculateRates(inputArea.val())
+                })
+
+                // rates calculator end
+            </script>
+            <script src="scripts/rangeslider.min.js"></script>
+            <script src="scripts/jquery.datetimepicker.full.min.js"></script>
+            <script src="scripts/swiper.min.js"></script>
+            <script src="scripts/wow.min.js"></script>
+            <script src="scripts/rellax.min.js"></script>
+            <script src="scripts/jquery.fancybox.min.js"></script>
+            <script src="scripts/jquery.inputmask.bundle.min.js"></script>
+            <script src="scripts/script.js"></script>
+            <script src="scripts/popup-buy.js"></script>
+            <script>
+                jQuery.datetimepicker.setLocale('ru');
+
+                jQuery('#datepicker').datetimepicker({
+                    format: 'd.m.Y H:i',
+                    inline: false,
+                    lang: 'ru',
+                    dayOfWeekStart: 1,
+                    minDate: 0,
+                    allowTimes: [
+                        '09:00',
+                        '11:00',
+                        '13:00',
+                        '15:00',
+                        '17:00',
+                        '19:00'
+                    ]
+                });
+
+                jQuery('.montage-date-input').datetimepicker({
+                    format: 'd.m.Y H:i',
+                    inline: false,
+                    lang: 'ru',
+                    dayOfWeekStart: 1,
+                    todayButton: false,
+                    defaultSelect: false,
+                    useCurrent: false,
+                    minDate: '+1970/01/07',
+                    startDate: '+1970/01/07',
+                    defaultDate: '+1970/01/07',
+                    formatDate: 'Y.m.d',
+
+                    closeOnDateSelect: false,
+
+                    allowTimes: [
+                        '10:00',
+                        '14:00'
+                    ]
+                });
+            </script>
+            <script>
+                (function() {
+                    var widget_id = 'UR6zEyUneg';
+                    var d = document;
+                    var w = window;
+
+                    function l() {
+                        var s = document.createElement('script');
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.src = '//code.jivosite.com/script/widget/' + widget_id;
+                        var ss = document.getElementsByTagName('script')[0];
+                        ss.parentNode.insertBefore(s, ss);
+                    }
+                    if (d.readyState == 'complete') {
+                        l();
+                    } else {
+                        if (w.attachEvent) {
+                            w.attachEvent('onload', l);
+                        } else {
+                            w.addEventListener('load', l, false);
+                        }
+                    }
+                })();
+            </script>
+</body>
+
+</html>

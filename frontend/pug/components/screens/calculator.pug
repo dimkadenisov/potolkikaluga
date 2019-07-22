@@ -1,0 +1,70 @@
+.container
+  .row
+    .col-12.col-sm-7.offset-sm-5.col-lg-12.offset-lg-0
+      span.screen-heading.calculator-heading.wow.fadeInUp Онлайн калькулятор
+      span.screen-description.calculator-heading.wow.fadeInUp Узнайте стоимость натяжного
+        br
+        |потолка с установкой
+    .col-12.col-lg-10.offset-lg-1.col-xl-8.offset-xl-2.position-relative
+      .rellax.iphone(style="background-image: url(assets/img/phone.png); transform: rotate(16deg);" data-rellax-speed="1" data-rellax-percentage="0.4")
+      .rellax.iphone-shadow(style="background-image: url(assets/img/phone-shadow.png)" data-rellax-speed="1" data-rellax-percentage="0.4")
+      form.calculator.wow.fadeInUp
+        .calculator-fieldset
+          label(for="amount-range") Количество
+            br
+            |потолков /шт.
+          .calculator-fieldset-range.d-none.d-xl-block
+            input(id="amount-range" type="range" min="1" step="1" max="30" value="4" data-rangeslider)
+          .calculator-fieldset-number
+            a(href="#").d-inline-block
+              span -
+            input#amount-input(type="number" value="4" min="1" step="1" max="30")
+            a(href="#" data-increment).d-inline-block
+              span +
+        .calculator-fieldset
+          label(for="area-range") Общая
+            br
+            |площадь /м².
+          .calculator-fieldset-range.d-none.d-xl-block
+            input(id="area-range" type="range" min="1" step="1" max="500" value="74" data-rangeslider)
+          .calculator-fieldset-number
+            a(href="#").d-inline-block
+              span -
+            input#area-input(type="number" value="74" min="1" step="1" max="500")
+            a(href="#" data-increment).d-inline-block
+              span +
+        .calculator-fieldset
+          label(for="surface") Покрытие
+          .calculator-fieldset-select
+            select#surface(name="surface-type")
+              option(value="mat") Матовый
+              option(value="glossy") Глянцевый
+        .calculator-fieldset
+          label(for="room") Тип
+            br
+            |помещения
+          .calculator-fieldset-select
+            select#room(name="room-type")
+              option(value="New") Новостройка
+              option(value="Old") Вторичка
+        span.calculator-price
+          span Примерная стоимость
+          b от 40 875 ₽ до 57620
+          span.d-none.d-sm-inline-block.calculator-price-question
+            span.calculator-question-icon ?
+            |От чего зависит стоимость?
+            span.calculator-price-answer.
+              Стоимость варьируется в&nbsp;зависимости от&nbsp;производителя полотна, цвета и&nbsp;фактуры
+        .calculator-fieldset
+          label(for="color") Цвет
+          .calculator-fieldset-select
+            select#color(name="color")
+              option(value="White") Белый
+              option(value="Colored") Цветной
+        a(data-fancybox="calculator" data-src="#popup-calculator").calculator-button Получить точную смету
+          br
+          b онлайн
+        .calculator-question.d-none.d-md-block
+          span.calculator-question-icon ?
+          b Что входит в стоимость:
+          |Замер, доставка, материал (полотна и профиль), установка (профиля и полотна).

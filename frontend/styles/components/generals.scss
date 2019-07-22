@@ -1,0 +1,123 @@
+//local utilites
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Gilroy", "Helvetica", "Arial", sans-serif;
+  // background-image: url("../assets/img/test-2.png");
+
+  &.fancybox-active {
+    overflow-y: hidden;
+  }
+}
+
+.screen {
+  &-heading {
+    display: block;
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+
+  &-description {
+    display: block;
+    font-size: 3rem;
+  }
+}
+
+/**Убрать стрелочки у number**/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  // -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/**End Убрать стрелочки у number**/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  //- IE10+ specific styles go here
+
+  .free-lamp {
+    &-arrow,
+    &-arrow-bottom,
+    &-sign,
+    &-gift-text {
+      display: none !important;
+    }
+  }
+
+  .here-and-now {
+    & > svg {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1579px) {
+  html {
+    font-size: 8px;
+  }
+
+  .screen {
+    &-heading {
+      font-size: 4.375rem;
+    }
+
+    &-description {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 10px;
+  }
+
+  .screen {
+    &-heading {
+      font-size: 30px;
+    }
+
+    &-description {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+
+  .screen {
+    &-heading {
+      font-size: 18px;
+    }
+
+    &-description {
+      font-size: 12px;
+    }
+  }
+}

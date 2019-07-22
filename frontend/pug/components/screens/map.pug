@@ -1,0 +1,30 @@
+.contacts-info
+  .container
+    .row
+      .col-12
+        .contacts-info-block
+          .contacts-info-block-left
+            include ../../../assets/img/icons/pin-magenta.svg
+            .contacts-info-block-text
+              span
+                b Добро пожаловать в наш офис
+              span БП Румянцево, офис 912/1Г
+              a(data-fancybox="office" data-src="#popup-office") Наши представительства
+          .footer-contacts-phone
+            i
+            |
+            |
+            a(href="tel:+79029315473") +7 902 931 54 73
+          .d-none.d-md-block.contacts-info-block-right
+            .contacts-info-block-text
+              span
+                b Время работы
+              span Пн — Пт: с 09:00 до 21:00
+                br
+                |Сб: с 10:00 до 17:00
+                br
+                |Вс: с 10:00 до 17:00
+  .d-none.d-md-block.office-img
+    img(src="assets/img/office.jpg", alt="Наше представительство")
+  .map
+    iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A22ba18ade9407847ea2b481b0a9c1a84beb077f8d1f35f6f368e3f435130d6bc&amp;source=constructor" width="100%" height="100%" frameborder="0")

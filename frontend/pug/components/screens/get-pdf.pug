@@ -1,0 +1,59 @@
+.container
+  .row
+    .col-12.col-xl-8.offset-xl-2.col-xxl-10.offset-xxl-1
+      span.screen-heading.get-pdf-heading.wow.fadeInUp Больше потолков – в наших каталогах
+      span.screen-description.get-pdf-subheading.wow.fadeInUp Получи каталоги с актуальными ценами
+      .get-pdf.wow.fadeInUp
+        span.d-none.d-md-block.get-pdf-description Получите каталоги с ценами и самым полным ассортиментов
+          br
+          |цветов и фактур на email/viber/whatsapp/telegram
+        form.get-pdf-form
+          .d-none.d-md-flex
+            i(style="background-image: url(assets/img/icons/promocode.svg)")
+            span Секретный промокод от менеджера
+              |на бесплатный монтаж люстры или карниза
+              |для штор (экономия до 2000 руб!)
+          .d-none.d-md-flex
+            i(style="background-image: url(assets/img/icons/catalog.svg)")
+            span Каталог с подборками
+              br
+              |по типам и фактурам
+          div
+            input(type="text" placeholder="Имя" required)
+            i(style="background-image: url(assets/img/icons/user.png)")
+          .d-none.d-md-flex
+            i(style="background-image: url(assets/img/icons/pricelist.svg)")
+            span Актуальный  прайслист
+              br
+              |(цены обновлены 2 дня назад)
+          div
+            input.messengers-input.add-phone-mask(type="tel" placeholder="Телефон" required)
+            i(style="background-image: url(assets/img/icons/phone-magenta.png)")
+          div
+            button Получить каталоги
+          label.d-none.d-md-block Я согласен на получение
+            br
+            |информации от Мастер Потолков
+            br
+            a(href="#") Изменить настройки
+            input(type="checkbox" checked="checked" required)
+            span.checkmark
+          label.d-none.d-md-block Нажимая на кнопку, я даю согласие на обработку
+            br
+            |персональных данных и соглашаюсь с
+            br
+            a(href="#") пользовательским соглашением
+            |
+            |
+            |и
+            br
+            a(href="#") политикой конфиденциальности
+            input(type="checkbox" checked="checked" required)
+            span.checkmark
+        img.rellax(src="assets/img/catalog.png", alt="каталог" data-rellax-speed="1" data-rellax-percentage="0.5")
+        span.get-pdf-catalog-update Каталог обновлен
+          br
+          |3 дня назад
+        .get-pdf-arrow
+          include ../../../assets/img/icons/arrow.svg
+        include ../../../assets/img/icons/corner.svg

@@ -1,0 +1,671 @@
+//fonts
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic';
+  src: local('Franklin Gothic Medium'), local('FranklinGothic-Medium'),
+      url('../assets/fonts/FranklinGothic-Medium.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic Demi';
+  src: local('Franklin Gothic Demi Italic'), local('FranklinGothic-DemiItalic'),
+      url('../assets/fonts/FranklinGothic-DemiItalic.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-DemiItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic Book';
+  src: local('Franklin Gothic Book Italic'), local('FranklinGothic-BookItalic'),
+      url('../assets/fonts/FranklinGothic-BookItalic.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic Demi Cond';
+  src: local('Franklin Gothic Demi Cond'), local('FranklinGothic-DemiCond'),
+      url('../assets/fonts/FranklinGothic-DemiCond.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-DemiCond.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Arial';
+  src: local('Arial Bold'), local('Arial-BoldMT'),
+      url('../assets/fonts/Arial-BoldMT.woff2') format('woff2'),
+      url('../assets/fonts/Arial-BoldMT.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic Demi';
+  src: local('Franklin Gothic Demi'), local('FranklinGothic-Demi'),
+      url('../assets/fonts/FranklinGothic-Demi.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-Demi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic';
+  src: local('Franklin Gothic Heavy Italic'), local('FranklinGothic-HeavyItalic'),
+      url('../assets/fonts/FranklinGothic-HeavyItalic.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-HeavyItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic';
+  src: local('Franklin Gothic Medium Italic'), local('FranklinGothic-MediumItalic'),
+      url('../assets/fonts/FranklinGothic-MediumItalic.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic Medium Cond';
+  src: local('Franklin Gothic Medium Cond'), local('FranklinGothic-MediumCond'),
+      url('../assets/fonts/FranklinGothic-MediumCond.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-MediumCond.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic Book';
+  src: local('Franklin Gothic Book'), local('FranklinGothic-Book'),
+      url('../assets/fonts/FranklinGothic-Book.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pragmatica';
+  src: local('Pragmatica Bold'), local('Pragmatica-Bold'),
+      url('../assets/fonts/Pragmatica-Bold.woff2') format('woff2'),
+      url('../assets/fonts/Pragmatica-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Times New Roman';
+  src: local('Times New Roman Italic'), local('TimesNewRomanPS-ItalicMT'),
+      url('../assets/fonts/TimesNewRomanPS-ItalicMT.woff2') format('woff2'),
+      url('../assets/fonts/TimesNewRomanPS-ItalicMT.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// @font-face {
+//   font-display: swap;
+//   font-family: 'Arcadia';
+//   src: local('Arcadia Bold'), local('ArcadiaBold'),
+//       url('../assets/fonts/ArcadiaBold.woff2') format('woff2'),
+//       url('../assets/fonts/ArcadiaBold.woff') format('woff');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Condensed';
+  src: local('GothamCondensed-Light'),
+      url('../assets/fonts/GothamCondensed-Light.woff2') format('woff2'),
+      url('../assets/fonts/GothamCondensed-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Franklin Gothic';
+  src: local('Franklin Gothic Heavy'), local('FranklinGothic-Heavy'),
+      url('../assets/fonts/FranklinGothic-Heavy.woff2') format('woff2'),
+      url('../assets/fonts/FranklinGothic-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pragmatica';
+  src: local('Pragmatica'),
+      url('../assets/fonts/Pragmatica.woff2') format('woff2'),
+      url('../assets/fonts/Pragmatica.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Bold Italic'), local('FiraSans-BoldItalic'),
+      url('../assets/fonts/FiraSans-BoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Light'), local('GothamPro-Light'),
+      url('../assets/fonts/GothamPro-Light.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'),
+      url('../assets/fonts/FiraSans-Regular.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Eight';
+  src: local('Fira Sans Eight'), local('FiraSans-Eight'),
+      url('../assets/fonts/FiraSans-Eight.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Eight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Thin Italic'), local('FiraSans-ThinItalic'),
+      url('../assets/fonts/FiraSans-ThinItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+// @font-face {
+//   font-display: swap;
+//   font-family: 'Fira Sans Hair';
+//   src: local('Fira Sans Hair'), local('FiraSans-Hair'),
+//       url('../assets/fonts/FiraSans-Hair.woff2') format('woff2'),
+//       url('../assets/fonts/FiraSans-Hair.woff') format('woff');
+//   font-weight: 100;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-display: swap;
+//   font-family: 'Fira Sans Eight';
+//   src: local('Fira Sans Eight Italic'), local('FiraSans-EightItalic'),
+//       url('../assets/fonts/FiraSans-EightItalic.woff2') format('woff2'),
+//       url('../assets/fonts/FiraSans-EightItalic.woff') format('woff');
+//   font-weight: 200;
+//   font-style: italic;
+// }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Two';
+  src: local('Fira Sans Two'), local('FiraSans-Two'),
+      url('../assets/fonts/FiraSans-Two.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Two.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Book';
+  src: local('Fira Sans Book'), local('FiraSans-Book'),
+      url('../assets/fonts/FiraSans-Book.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans ExtraBold Italic'), local('FiraSans-ExtraBoldItalic'),
+      url('../assets/fonts/FiraSans-ExtraBoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Bold Italic'), local('GothamPro-BoldItalic'),
+      url('../assets/fonts/GothamPro-BoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Ultra';
+  src: local('Fira Sans Ultra Italic'), local('FiraSans-UltraItalic'),
+      url('../assets/fonts/FiraSans-UltraItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-UltraItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Heavy Italic'), local('FiraSans-HeavyItalic'),
+      url('../assets/fonts/FiraSans-HeavyItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-HeavyItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'),
+      url('../assets/fonts/FiraSans-ExtraLight.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Thin'), local('FiraSans-Thin'),
+      url('../assets/fonts/FiraSans-Thin.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro Narrow';
+  src: local('Gotham Pro Narrow Medium'), local('GothamProNarrow-Medium'),
+      url('../assets/fonts/GothamProNarrow-Medium.woff2') format('woff2'),
+      url('../assets/fonts/GothamProNarrow-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Italic'), local('FiraSans-Italic'),
+      url('../assets/fonts/FiraSans-Italic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans ExtraBold'), local('FiraSans-ExtraBold'),
+      url('../assets/fonts/FiraSans-ExtraBold.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Hair';
+  src: local('Fira Sans Hair Italic'), local('FiraSans-HairItalic'),
+      url('../assets/fonts/FiraSans-HairItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-HairItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Light Italic'), local('GothamPro-LightItalic'),
+      url('../assets/fonts/GothamPro-LightItalic.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'PragmaticaLightC';
+  src: local('PragmaticaLightC'),
+      url('../assets/fonts/PragmaticaLightC.woff2') format('woff2'),
+      url('../assets/fonts/PragmaticaLightC.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Four';
+  src: local('Fira Sans Four'), local('FiraSans-Four'),
+      url('../assets/fonts/FiraSans-Four.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Four.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Black Italic'), local('GothamPro-BlackItalic'),
+      url('../assets/fonts/GothamPro-BlackItalic.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gilroy';
+  src: local('Gilroy Light'), local('Gilroy-Light'),
+      url('../assets/fonts/Gilroy-Light.woff2') format('woff2'),
+      url('../assets/fonts/Gilroy-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'),
+      url('../assets/fonts/FiraSans-Medium.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Book';
+  src: local('Fira Sans Book Italic'), local('FiraSans-BookItalic'),
+      url('../assets/fonts/FiraSans-BookItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans ExtraLight Italic'), local('FiraSans-ExtraLightItalic'),
+      url('../assets/fonts/FiraSans-ExtraLightItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro'), local('GothamPro'),
+      url('../assets/fonts/GothamPro.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Light Italic'), local('FiraSans-LightItalic'),
+      url('../assets/fonts/FiraSans-LightItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'PragmaticaC';
+  src: local('PragmaticaC Italic'), local('PragmaticaC-Italic'),
+      url('../assets/fonts/PragmaticaC-Italic.woff2') format('woff2'),
+      url('../assets/fonts/PragmaticaC-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans SemiBold Italic'), local('FiraSans-SemiBoldItalic'),
+      url('../assets/fonts/FiraSans-SemiBoldItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'PragmaticaC';
+  src: local('PragmaticaC Bold'), local('PragmaticaC-Bold'),
+      url('../assets/fonts/PragmaticaC-Bold.woff2') format('woff2'),
+      url('../assets/fonts/PragmaticaC-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Pragmatica';
+  src: local('Pragmatica Black'), local('PragmaticaBlack'),
+      url('../assets/fonts/PragmaticaBlack.woff2') format('woff2'),
+      url('../assets/fonts/PragmaticaBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Ultra';
+  src: local('Fira Sans Ultra'), local('FiraSans-Ultra'),
+      url('../assets/fonts/FiraSans-Ultra.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Ultra.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gilroy';
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+      url('../assets/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+      url('../assets/fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Four';
+  src: local('Fira Sans Four Italic'), local('FiraSans-FourItalic'),
+      url('../assets/fonts/FiraSans-FourItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-FourItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+      url('../assets/fonts/GothamPro-Bold.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans UltraLight'), local('FiraSans-UltraLight'),
+      url('../assets/fonts/FiraSans-UltraLight.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-UltraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'),
+      url('../assets/fonts/FiraSans-Bold.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Medium Italic'), local('FiraSans-MediumItalic'),
+      url('../assets/fonts/FiraSans-MediumItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Black'), local('GothamPro-Black'),
+      url('../assets/fonts/GothamPro-Black.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'),
+      url('../assets/fonts/FiraSans-SemiBold.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans Two';
+  src: local('Fira Sans Two Italic'), local('FiraSans-TwoItalic'),
+      url('../assets/fonts/FiraSans-TwoItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-TwoItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+      url('../assets/fonts/GothamPro-Medium.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'PragmaticaC';
+  src: local('PragmaticaC'),
+      url('../assets/fonts/PragmaticaC.woff2') format('woff2'),
+      url('../assets/fonts/PragmaticaC.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Light'), local('FiraSans-Light'),
+      url('../assets/fonts/FiraSans-Light.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans Heavy'), local('FiraSans-Heavy'),
+      url('../assets/fonts/FiraSans-Heavy.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Medium Italic'), local('GothamPro-MediumItalic'),
+      url('../assets/fonts/GothamPro-MediumItalic.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Sans';
+  src: local('Fira Sans UltraLight Italic'), local('FiraSans-UltraLightItalic'),
+      url('../assets/fonts/FiraSans-UltraLightItalic.woff2') format('woff2'),
+      url('../assets/fonts/FiraSans-UltraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro Narrow';
+  src: local('Gotham Pro Narrow Bold'), local('GothamProNarrow-Bold'),
+      url('../assets/fonts/GothamProNarrow-Bold.woff2') format('woff2'),
+      url('../assets/fonts/GothamProNarrow-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro Italic'), local('GothamPro-Italic'),
+      url('../assets/fonts/GothamPro-Italic.woff2') format('woff2'),
+      url('../assets/fonts/GothamPro-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}

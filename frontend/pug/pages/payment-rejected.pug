@@ -1,0 +1,12 @@
+extends ../components/page
+block title
+  |Ошибка оплаты
+block link
+block content
+  .payment
+    .payment-state.payment-state-rejected
+      .payment-icon.payment-icon-rejected
+    span.payment-heading.payment-heading-rejected Извините, платёж не прошёл!
+    span.payment-text При обработке платежа произошла ошибка.
+
+    a(href="#").calculator-button Вернуться к оплате

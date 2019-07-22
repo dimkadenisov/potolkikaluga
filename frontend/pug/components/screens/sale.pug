@@ -1,0 +1,56 @@
+.container
+  .col-12
+    .sale
+      .wow.fadeInLeft.sale-text
+        span.sale-heading Натяжной потолок в&nbsp;ванной комнате
+        //- |
+        //- |
+        //- span.sale-description со&nbsp;скидкой
+        //- |
+        //- |
+        //- span.sale-description-magenta 40
+        //-   sup %
+        .sale-offer от
+          |
+          |
+          span.sale-offer-old-price 350
+          |
+          |
+          span.sale-offer-new-price 199
+          |
+          |р/м²
+          span.sale-offer-deadline Акция только до
+            |
+            |
+            b 30.05
+          |
+          |
+        ul.sale-benefits
+          li монтаж по ГОСТ
+          li 100% без запаха
+
+      .sale-icons
+        .wow.fadeInLeft.sale-icon(data-wow-delay="0.3s" data-wow-offset="0")
+          include ../../../assets/img/icons/shape.svg
+          span.sale-icon-numeral 40
+            sup %
+          span.sale-icon-text экономии
+        .wow.fadeInLeft.sale-icon(data-wow-delay="0.6s" data-wow-offset="0")
+          include ../../../assets/img/icons/shape.svg
+          span.sale-icon-numeral 20
+            sup лет
+          span.sale-icon-text гарантии
+        .wow.fadeInLeft.sale-icon(data-wow-delay="0.9s" data-wow-offset="0")
+          include ../../../assets/img/icons/shape.svg
+          span.sale-icon-numeral 2
+            sup дня
+          span.sale-icon-text от&nbsp;заказа до&nbsp;установки
+
+.sale-form-wrapper
+  .sale-form
+    form(action="")
+      legend заказать потолок по&nbsp;акции
+        span Успей до конца акции! Только до 30.05
+      input(type="text" placeholder="Ваше имя")
+      input(type="tel" placeholder="Ваше телефон").add-phone-mask
+      button Заказать

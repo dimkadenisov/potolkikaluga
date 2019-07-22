@@ -1,0 +1,759 @@
+.popup-buy-wrapper#popup-buy(data-selectable="true")
+  form.popup-buy
+    button(type="button" onclick="$.fancybox.close();").popup-buy-close
+    .popup-buy-head
+      span.popup-buy-head-step Шаг 1
+      span.popup-buy-head-description
+        span.popup-buy-head-description-big Укажите
+        span.popup-buy-head-description-small какое количество потолков нужно установить?
+    .popup-buy-progress
+      .popup-buy-progress-gradient
+      span.popup-buy-progress-pin 1
+      span.popup-buy-progress-pin 2
+      span.popup-buy-progress-pin 3
+      span.popup-buy-progress-pin 4
+      .popup-buy-progress-trolley
+
+    section.popup-buy-step.d-block(data-index="1")
+      .popup-buy-field
+        label Укажите количество потолков, которое хотите заказать
+        .popup-buy-field-input
+          a(href="#") -
+          input(type="number" value="1" max="10" min="1" step="1")
+          a(href="#" data-increment) +
+        button(type="button") Готово
+        .popup-buy-field-arrow-wrapper
+          include ../../assets/img/popup-buy-arrow.svg
+          span Нажмите!
+      .popup-buy-question
+        |?
+        .popup-buy-question-img(style="background-image: url(assets/img/person-question.png)")
+
+    section.popup-buy-step(data-index="2")
+      .popup-buy-cards-wrapper
+        .popup-buy-cards
+          .swiper-wrapper
+
+            //- fieldset.popup-buy-cards-item
+            //-   .popup-buy-cards-item-background(style="background-image: url(assets/img/popup-buy-card-bg.png)")
+            //-   .popup-buy-cards-item-number 1
+            //-   button(type="button").popup-buy-cards-item-remove
+            //-   .popup-buy-cards-item-body
+            //-     label(for="") Длина, см
+            //-     |
+            //-     |
+            //-     a.popup-buy-cards-item-calc(href="#") -
+            //-     input(type="number" placeholder="300" min="100" max="1000" step="1")
+            //-     a.popup-buy-cards-item-calc(href="#") +
+            //-     |
+            //-     |
+            //-     label(for="") Ширина, см
+            //-     |
+            //-     |
+            //-     a.popup-buy-cards-item-calc(href="#") -
+            //-     input(type="number" placeholder="300" min="100" max="1000" step="1")
+            //-     a.popup-buy-cards-item-calc(href="#") +
+            //-     |
+            //-     |
+            //-     label(for="" data-line-height) Тип помещения
+            //-     |
+            //-     |
+            //-     select
+            //-       option(selected disabled) Выбрать помещение
+            //-       option(value="") Жилая комната
+            //-       option(value="") Гостиная
+            //-       option(value="") Кухня
+            //-       option(value="") Ванная
+            //-       option(value="") Туалет
+            //-       option(value="") Коридор
+            //-       option(value="") Лоджия
+            //-       option(value="") Кладовая
+            //-       option(value="") Гардеробная
+            //-       option(value="") Другое
+            //-     |
+            //-     |
+            //-     label Фактура
+            //-     |
+            //-     |
+            //-     select
+            //-       option(selected disabled) Выберите фактуру
+            //-       option(value="mate") Матовая
+            //-       option(value="glossy") Глянцевая
+            //-       option(value="satin") Сатиновая
+            //-     |
+            //-     |
+            //-     p.popup-buy-cards-item-notice Как правильно указать размеры комнаты
+            //-       |
+            //-       |
+            //-       a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="how-to-do-1") смотрите видео
+            //-     .popup-buy-cards-item-images
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/baseline-logo.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/exploitation.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/ghost.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/white-color.png)")
+            //-     button(type="button").popup-buy-cards-item-ready Готово
+
+            //- fieldset.popup-buy-cards-item
+            //-   .popup-buy-cards-item-background(style="background-image: url(assets/img/popup-buy-card-bg.png)")
+            //-   .popup-buy-cards-item-number 1
+            //-   button(type="button").popup-buy-cards-item-remove
+            //-   .popup-buy-cards-item-body
+            //-     label(for="") Длина, см
+            //-     |
+            //-     |
+            //-     a.popup-buy-cards-item-calc(href="#") -
+            //-     input(type="number" placeholder="300" min="100" max="1000" step="1")
+            //-     a.popup-buy-cards-item-calc(href="#") +
+            //-     |
+            //-     |
+            //-     label(for="") Ширина, см
+            //-     |
+            //-     |
+            //-     a.popup-buy-cards-item-calc(href="#") -
+            //-     input(type="number" placeholder="300" min="100" max="1000" step="1")
+            //-     a.popup-buy-cards-item-calc(href="#") +
+            //-     |
+            //-     |
+            //-     label(for="" data-line-height) Тип помещения
+            //-     |
+            //-     |
+            //-     select
+            //-       option(selected disabled) Выбрать помещение
+            //-       option(value="") Жилая комната
+            //-       option(value="") Гостиная
+            //-       option(value="") Кухня
+            //-       option(value="") Ванная
+            //-       option(value="") Туалет
+            //-       option(value="") Коридор
+            //-       option(value="") Лоджия
+            //-       option(value="") Кладовая
+            //-       option(value="") Гардеробная
+            //-       option(value="") Другое
+            //-     |
+            //-     |
+            //-     label Фактура
+            //-     |
+            //-     |
+            //-     select
+            //-       option(selected disabled) Выберите фактуру
+            //-       option(value="mate") Матовая
+            //-       option(value="glossy") Глянцевая
+            //-       option(value="satin") Сатиновая
+            //-     |
+            //-     |
+            //-     p.popup-buy-cards-item-notice Как правильно указать размеры комнаты
+            //-       |
+            //-       |
+            //-       a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="how-to-do-1") смотрите видео
+            //-     .popup-buy-cards-item-images
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/baseline-logo.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/exploitation.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/ghost.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/white-color.png)")
+            //-     button(type="button").popup-buy-cards-item-ready Готово
+
+            //- fieldset.popup-buy-cards-item
+            //-   .popup-buy-cards-item-background(style="background-image: url(assets/img/popup-buy-card-bg.png)")
+            //-   .popup-buy-cards-item-number 1
+            //-   button(type="button").popup-buy-cards-item-remove
+            //-   .popup-buy-cards-item-body
+            //-     label(for="") Длина, см
+            //-     |
+            //-     |
+            //-     a.popup-buy-cards-item-calc(href="#") -
+            //-     input(type="number" placeholder="300" min="100" max="1000" step="1")
+            //-     a.popup-buy-cards-item-calc(href="#") +
+            //-     |
+            //-     |
+            //-     label(for="") Ширина, см
+            //-     |
+            //-     |
+            //-     a.popup-buy-cards-item-calc(href="#") -
+            //-     input(type="number" placeholder="300" min="100" max="1000" step="1")
+            //-     a.popup-buy-cards-item-calc(href="#") +
+            //-     |
+            //-     |
+            //-     label(for="" data-line-height) Тип помещения
+            //-     |
+            //-     |
+            //-     select
+            //-       option(selected disabled) Выбрать помещение
+            //-       option(value="") Жилая комната
+            //-       option(value="") Гостиная
+            //-       option(value="") Кухня
+            //-       option(value="") Ванная
+            //-       option(value="") Туалет
+            //-       option(value="") Коридор
+            //-       option(value="") Лоджия
+            //-       option(value="") Кладовая
+            //-       option(value="") Гардеробная
+            //-       option(value="") Другое
+            //-     |
+            //-     |
+            //-     label Фактура
+            //-     |
+            //-     |
+            //-     select
+            //-       option(selected disabled) Выберите фактуру
+            //-       option(value="mate") Матовая
+            //-       option(value="glossy") Глянцевая
+            //-       option(value="satin") Сатиновая
+            //-     |
+            //-     |
+            //-     p.popup-buy-cards-item-notice Как правильно указать размеры комнаты
+            //-       |
+            //-       |
+            //-       a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="how-to-do-1") смотрите видео
+            //-     .popup-buy-cards-item-images
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/baseline-logo.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/exploitation.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/ghost.png)")
+            //-       .popup-buy-cards-item-images-item(style="background-image: url(assets/img/white-color.png)")
+            //-     button(type="button").popup-buy-cards-item-ready Готово
+
+            //- fieldset.popup-buy-cards-item
+              .popup-buy-cards-item-background(style="background-image: url(assets/img/popup-buy-card-bg.png)")
+              .popup-buy-cards-item-number 1
+              button(type="button").popup-buy-cards-item-remove
+              .popup-buy-cards-item-body
+                label(for="") Длина, см
+                |
+                |
+                a.popup-buy-cards-item-calc(href="#") -
+                input(type="number" placeholder="300" min="100" max="1000" step="1")
+                a.popup-buy-cards-item-calc(href="#") +
+                |
+                |
+                label(for="") Ширина, см
+                |
+                |
+                a.popup-buy-cards-item-calc(href="#") -
+                input(type="number" placeholder="300" min="100" max="1000" step="1")
+                a.popup-buy-cards-item-calc(href="#") +
+                |
+                |
+                label(for="" data-line-height) Тип помещения
+                |
+                |
+                select
+                  option(selected disabled) Выбрать помещение
+                  option(value="") Жилая комната
+                  option(value="") Гостиная
+                  option(value="") Кухня
+                  option(value="") Ванная
+                  option(value="") Туалет
+                  option(value="") Коридор
+                  option(value="") Лоджия
+                  option(value="") Кладовая
+                  option(value="") Гардеробная
+                  option(value="") Другое
+                |
+                |
+                label Фактура
+                |
+                |
+                select
+                  option(selected disabled) Выберите фактуру
+                  option(value="mate") Матовая
+                  option(value="glossy") Глянцевая
+                  option(value="satin") Сатиновая
+                |
+                |
+                p.popup-buy-cards-item-notice Как правильно указать размеры комнаты
+                  |
+                  |
+                  a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="how-to-do-1") смотрите видео
+                .popup-buy-cards-item-images
+                  .popup-buy-cards-item-images-item(style="background-image: url(assets/img/baseline-logo.png)")
+                  .popup-buy-cards-item-images-item(style="background-image: url(assets/img/exploitation.png)")
+                  .popup-buy-cards-item-images-item(style="background-image: url(assets/img/ghost.png)")
+                  .popup-buy-cards-item-images-item(style="background-image: url(assets/img/white-color.png)")
+                button(type="button").popup-buy-cards-item-ready Готово
+
+            .popup-buy-cards-item.popup-buy-cards-item-add
+
+        .popup-buy-cards-button.popup-buy-cards-button-prev
+        .popup-buy-cards-button.popup-buy-cards-button-next
+
+      .d-none.popup-buy-sum
+        span Стоимость полотна и установки профиля
+        b 0 ₽
+      button(disabled="disabled" type="button").popup-buy-button.popup-buy-button-center.popup-buy-button-magenta.calculate-corners-amount Далее >>
+      a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="popup-buy-link-video-1").popup-buy-link-video
+        span видео инструкция
+
+      button.popup-buy-online-chat(type="button" onclick="jivo_api.open()")
+        span онлайн- ассистент
+
+    section.popup-buy-step(data-index="3")
+      .popup-buy-additions
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text
+              span.popup-buy-additions-item-block-text-heading Укажите общее количество углов
+              |
+              |
+              span.popup-buy-additions-item-block-text-description во всех помещениях
+              a(href="https://youtu.be/a6C6ayGHvg4" data-fancybox="how-to-count-1") Как  посчитать?
+            .popup-buy-additions-item-block-calc
+              button(type="button") -
+              input#corners-amount(type="number" value="4" min="4" step="1")
+              button(type="button" data-increment) +
+              |
+              |
+              span х
+              |
+              |
+              span.popup-buy-additions-item-block-calc-multiplier 250
+              span.rubl ₽
+              |
+              |
+              span
+                |=
+              |
+              |
+              span.popup-buy-additions-item-block-calc-output 0
+              span.rubl ₽
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text
+              span.popup-buy-additions-item-block-text-heading Укажите общее количество труб,
+              |
+              |
+              span.popup-buy-additions-item-block-text-description уходящих в потолок
+              a(href="https://youtu.be/RchguDD3ugo" data-fancybox="how-to-count-2") Как  посчитать?
+            .popup-buy-additions-item-block-calc
+              button(type="button") -
+              input#pipes-amount(type="number" value="0" min="0" step="1")
+              button(type="button" data-increment) +
+              |
+              |
+              span х
+              |
+              |
+              span.popup-buy-additions-item-block-calc-multiplier 300
+              span.rubl ₽
+              |
+              |
+              span
+                |=
+              |
+              |
+              span.popup-buy-additions-item-block-calc-output 0
+              span.rubl ₽
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text
+              span.popup-buy-additions-item-block-text-heading Укажите общее количество люстр
+              |
+              |
+              span.popup-buy-additions-item-block-text-description во всех помещениях
+              a(href="https://youtu.be/RQ9yRKahPsM" data-fancybox="how-to-count-3") Как  посчитать?
+            .popup-buy-additions-item-block-calc
+              button(type="button") -
+              input#chandelier-to-install-amount(type="number" value="0" min="0" step="1")
+              button(type="button" data-increment) +
+              |
+              |
+              span х
+              |
+              |
+              span.popup-buy-additions-item-block-calc-multiplier 500
+              span.rubl ₽
+              |
+              |
+              span
+                |=
+              |
+              |
+              span.popup-buy-additions-item-block-calc-output 0
+              span.rubl ₽
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text
+              span.popup-buy-additions-item-block-text-heading Сколько точечных светильников
+              |
+              |
+              span.popup-buy-additions-item-block-text-description нужно установить? (всего, во всех помещениях)
+              a(href="https://youtu.be/5x8h1jZSXoI" data-fancybox="how-to-count-4") Как  посчитать?
+            .popup-buy-additions-item-block-calc
+              button(type="button") -
+              input#spotlight-amount(type="number" value="0" min="0" step="1")
+              button(type="button" data-increment) +
+              |
+              |
+              span х
+              |
+              |
+              span.popup-buy-additions-item-block-calc-multiplier 500
+              span.rubl ₽
+              |
+              |
+              span
+                |=
+              |
+              |
+              span.popup-buy-additions-item-block-calc-output 0
+              span.rubl ₽
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text
+              span.popup-buy-additions-item-block-text-heading Нужно ли снять старые люстры?
+            .popup-buy-additions-item-block-calc
+              button(type="button") -
+              input#chandelier-to-uninstall-amount(type="number" value="0" min="0" step="1")
+              button(type="button" data-increment) +
+              |
+              |
+              span х
+              |
+              |
+              span.popup-buy-additions-item-block-calc-multiplier 500
+              span.rubl ₽
+              |
+              |
+              span
+                |=
+              |
+              |
+              span.popup-buy-additions-item-block-calc-output 0
+              span.rubl ₽
+
+      .popup-buy-sum
+        span Указана стоимость с учетом полотна, его установки и
+          |
+          |
+          |дополнительных работ по монтажу освещения и
+          |
+          |
+          |других встроенных элементов
+        b 0 ₽
+      button(type="button").popup-buy-button.popup-buy-button-left << Вернуться
+      button(type="button").popup-buy-button.popup-buy-button-magenta.popup-buy-button-right.set-value Далее >>
+      a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="popup-buy-link-video-2").popup-buy-link-video
+        span видео инструкция
+
+      button.popup-buy-online-chat(type="button" onclick="jivo_api.open()")
+        span онлайн- ассистент
+
+    section.popup-buy-step(data-index="4")
+      .popup-buy-step-heading
+        span Дополнительные монтажные работы
+      .popup-buy-additions
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text.popup-buy-additions-item-block-text-long
+              span.popup-buy-additions-item-block-text-heading.popup-buy-additions-item-block-text-heading-single Высота ваших потолков
+              label
+                input(type="radio" checked name="ceiling height" id="less-then-3")
+                span
+                |до 3м
+              label
+                input(type="radio" name="ceiling height" id="more-then-3")
+                span
+                |свыше 3м
+            .popup-buy-additions-item-block-sum
+              b 0 ₽
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text.popup-buy-additions-item-block-text-long
+              span.popup-buy-additions-item-block-text-heading Наличие плитки на стенах
+              |
+              |
+              span.popup-buy-additions-item-block-text-description в комнатах, где будут установлены потолки
+              br
+              label.roomtype-checkbox-label
+                input(type="checkbox" id="bathroom" disabled)
+                span
+                |в ванной
+              label.roomtype-checkbox-label
+                input(type="checkbox" id="wc" disabled)
+                span
+                |в туалете
+              label.roomtype-checkbox-label
+                input(type="checkbox" id="kitchen" disabled)
+                span
+                |в кухне
+            .popup-buy-additions-item-block-sum
+              b 0 ₽
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text.popup-buy-additions-item-block-text-long
+              span.popup-buy-additions-item-block-text-heading Наличие кондиционера
+              |
+              |
+              span.popup-buy-additions-item-block-text-description в комнатах где будут установлены потолки
+              br
+              a(href="https://youtu.be/QMHd50feMqw" data-fancybox="how-to-count-5") Как  посчитать?
+              label
+                input(type="checkbox" id="conditioner")
+                span
+                |да
+              span.popup-buy-additions-item-block-text-warning при наличии кондиционера понадобится монтаж специальной закладной
+            .popup-buy-additions-item-block-sum
+              b 0 ₽
+
+        fieldset
+          .popup-buy-additions-item
+            .popup-buy-additions-item-block-text.popup-buy-additions-item-block-text-long
+              span.popup-buy-additions-item-block-text-heading Будет ли потолок
+              |
+              |
+              span.popup-buy-additions-item-block-text-description примыкать к шкафу-купе?
+              br
+              a(href="https://youtu.be/7WqTJafq8Mg" data-fancybox="how-to-count-6") Как  посчитать?
+              label
+                input(type="checkbox" id="closet")
+                span
+                |да
+              span.popup-buy-additions-item-block-text-warning при наличии шкафа-купе понадобится монтаж специальной закладной
+            .popup-buy-additions-item-block-sum
+              b 0 ₽
+
+      .popup-buy-sum
+        span Общая предварительная стоимость смещается под эти вопросы
+        b 0 ₽
+      button(type="button").popup-buy-button.popup-buy-button-left.clear-tile-state << Вернуться
+      button(type="button").popup-buy-button.popup-buy-button-magenta.popup-buy-button-right.calculate-total-amount Далее >>
+      a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="popup-buy-link-video-3").popup-buy-link-video
+        span видео инструкция
+
+      button.popup-buy-online-chat(type="button" onclick="jivo_api.open()")
+        span онлайн- ассистент
+
+    section.popup-buy-step(data-index="5")
+      .popup-buy-contacts-wrapper
+        .popup-buy-contacts
+          fieldset
+            legend Контактные данные, выбор даты и&nbsp;времени
+            label Адрес монтажа
+              input#montage-adress-input(type="text" require placeholder="Ваш адрес" style="background-image: url(assets/img/icons/pin-magenta.png)")
+            label Ваш контактный номер
+              input.add-phone-mask(type="tel" require placeholder="Ваш телефон" style="background-image: url(assets/img/icons/phone-magenta.png)")
+            label ФИО
+              input(type="text" require placeholder="ФИО полностью" style="background-image: url(assets/img/icons/user.png)")
+              span.popup-buy-additions-item-block-text-warning для электронного договора
+            label Желаемая дата монтажа
+              input#montage-date-input.montage-date-input.short(type="text", require, placeholder="Дата и время", autocomplete="off", readonly, style="cursor: text; background-image: url(assets/img/icons/calendar-magenta.png)")
+
+      button(type="button").popup-buy-button.popup-buy-button-left << Вернуться
+      button(type="button").popup-buy-button.popup-buy-button-magenta.popup-buy-button-right.check-personal-data Далее >>
+      a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="popup-buy-link-video-4").popup-buy-link-video
+        span видео инструкция
+
+      button.popup-buy-online-chat(type="button" onclick="jivo_api.open()")
+        span онлайн- ассистент
+
+    section.popup-buy-step(data-index="6")
+      .popup-buy-total
+        span.popup-buy-total-heading Смета
+        ul
+          li.popup-buy-total-field.popup-buy-total-field-sum
+            span.popup-buy-total-field-name Стоимость
+            span.popup-buy-total-field-value
+              span#total-amount-without-discount 31 037
+          li.popup-buy-total-field.popup-buy-total-field-done
+            label.popup-buy-total-field-name
+              input(type="checkbox" checked id="give-online-discount")
+              span
+              |Скидка&nbsp;10% при&nbsp;оплате аванса онлайн
+            span.popup-buy-total-field-value
+              span#online-discount 31 037
+          li.popup-buy-total-field.popup-buy-total-field-dot
+            span.popup-buy-total-field-name Моющее средство в&nbsp;подарок
+          li.popup-buy-total-field.popup-buy-total-field-dot
+            span.popup-buy-total-field-name Бесплатный сервис 1 год
+          li.popup-buy-total-field
+            span.popup-buy-total-field-name Дата монтажа:
+            span#montage-date-output.popup-buy-total-field-value 25.05.2019
+          li.popup-buy-total-field
+            span.popup-buy-total-field-name Адрес:
+              |
+              |
+              span#montage-adress-output.popup-buy-total-field-value г. Малоярославец, ул. Первомайская, д. 28, корп. 1,  кв. 45
+
+        span.popup-buy-total-summary
+          b.popup-buy-total-summary-text ИТОГО СО СКИДКОЙ
+          |
+          |
+          b.popup-buy-total-summary-price
+            span#total-amount-with-discount 25 035
+          span Итоговая смета
+          a.popup-buy-total-summary-link(href="#") посмотреть
+
+      .popup-buy-total
+        span.popup-buy-total-heading Договор оферта
+        ul
+          li.popup-buy-total-field
+            span.popup-buy-total-field-name на оказание услуг   № 23232 от  22.01.2019 г.
+          li.popup-buy-total-field
+            a(href="#") открыть и скачать PDF
+
+        span.popup-buy-total-summary
+          span.popup-buy-total-summary-text К оплате:
+            |
+            |
+            b Аванс 25 %
+          |
+          |
+          b.popup-buy-total-summary-price
+            span#prepayment 10 000 ₽
+
+          a.popup-buy-total-summary-link.popup-buy-total-summary-link-small(href="https://youtu.be/btR978GWasA" data-fancybox="whats-next") Что будет после оплаты аванса?
+
+        span.popup-buy-total-alert * нажимая кнопку «Перейти к оплате» вы соглашаетесь с условиями Договора-оферты
+
+      button(type="button").popup-buy-button.popup-buy-button-left << Вернуться
+      button(type="button").popup-buy-button.popup-buy-button-magenta.popup-buy-button-right.go-to-payment Перейти к оплате >>
+      a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="popup-buy-link-video-5").popup-buy-link-video
+        span видео инструкция
+
+      button.popup-buy-online-chat(type="button" onclick="jivo_api.open()")
+        span онлайн- ассистент
+
+    section.popup-buy-step(data-index="7")
+      .popup-buy-pay
+        div
+          span.popup-buy-pay-all Общая стоимость заказа
+          span.popup-buy-pay-all-sum#total-sum 31 037
+            |
+            |
+            span.rubl ₽
+        div
+          span.popup-buy-pay-online Оплата онлайн
+          .popup-buy-pay-online-sum
+            input#total-prepayment(type="number")
+            |
+            |
+            span.rubl ₽
+            span.popup-buy-pay-online-sum-text аванс 25%
+        span.popup-buy-pay-info Оплата аванса от 25% от общей стоимости заказа, остаток оплачивается на монтаже!
+
+        .popup-buy-pay-payment
+          span Способы оплаты
+          a.popup-buy-pay-payment-button.popup-buy-pay-payment-button-truck(href="#" data-fancybox="popup-buy-courier")
+            span Заказать курьера бесплатно
+          a.popup-buy-pay-payment-button.popup-buy-pay-payment-button-pin(href="#" data-fancybox="popup-buy-office")
+            span Оплатить в офисе
+          .popup-buy-pay-payment-methods
+            a(href="#" target="blank" style="background-image: url(assets/img/icons/visa.svg)")
+            a(href="#" target="blank" style="background-image: url(assets/img/icons/mastercard.svg")
+            a(href="#" target="blank" style="background-image: url(assets/img/icons/halva.svg)")
+            a(href="#" target="blank" style="background-image: url(assets/img/icons/mir.svg)")
+            a(href="#" target="blank" style="background-image: url(assets/img/icons/maestro.svg")
+
+      a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="popup-buy-link-video-6").popup-buy-link-video
+        span видео инструкция
+
+      button(type="button").popup-buy-button.popup-buy-button-center.popup-buy-go-back Вернуться
+      button.popup-buy-online-chat(type="button" onclick="jivo_api.open()")
+        span онлайн- ассистент
+
+    .popup-buy-phone
+      a(href="tel:88002221056") 8 800 222 10 56
+      span техподдержка
+
+//- ////////////////////////////
+//- ////////////////////////////
+//- ////////////////////////////
+
+.popup-buy-wrapper#popup-buy-courier(data-selectable="true")
+  .popup-buy.popup-buy-inner-window
+    button(type="button" onclick="$.fancybox.close();").popup-buy-close
+    section.popup-buy-step
+      span.popup-buy-inner-window-head Заказать курьера для оформления договора и&nbsp;оплаты аванса
+        |
+        |
+        b бесплатно
+      fieldset
+        label.d-block.popup-buy-inner-window-input-description Куда?
+          input.popup-buy-inner-window-adress(type="text" require placeholder="Ваш адрес" style="background-image: url(assets/img/icons/pin-magenta.png)")
+          a(href="#").popup-buy-inner-window-link
+            span указать другой адрес
+        label.d-block.popup-buy-inner-window-input-description Когда?
+          input.popup-buy-inner-window-date.montage-date-input(type="text", require, placeholder="Дата и удобное время", autocomplete="off", readonly, style="cursor: text; background-image: url(assets/img/icons/calendar-magenta.png)")
+        span.popup-buy-additions-item-block-text-heading Дополнительные пожелания
+      fieldset
+        div
+          label.popup-buy-inner-window-checkbox-description Позвонить заренее
+            input(type="checkbox" checked)
+            span
+          |
+          |
+          div.popup-buy-inner-window-hours-choice
+            span за
+            button(type="button") -
+            input(type="number" value="1" min="0.5" max="3" step="0.5" data-step="0.5")
+            button(type="button" data-increment) +
+            span час(а)
+        div
+          label.popup-buy-inner-window-checkbox-description Привезти каталоги
+            input(type="checkbox" checked)
+            span
+        div
+          label.popup-buy-inner-window-checkbox-description Прислать замерщика - технолога
+            input(type="checkbox" checked)
+            span
+      button(type="button").popup-buy-button.popup-buy-button-center.popup-buy-button-magenta.close-popup-buy Заказать курьера
+
+      a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="popup-buy-link-video-7").popup-buy-link-video
+        span видео инструкция
+
+      button.popup-buy-online-chat(type="button" onclick="jivo_api.open()")
+        span онлайн- ассистент
+    .popup-buy-phone
+      a(href="tel:88000000000") 8 800 000 00 00
+      span техподдержка
+
+//- ////////////////////////////
+//- ////////////////////////////
+//- ////////////////////////////
+
+.popup-buy-wrapper#popup-buy-office(data-selectable="true")
+  .popup-buy.popup-buy-inner-window
+    button(type="button" onclick="$.fancybox.close();").popup-buy-close
+    section.popup-buy-step
+      span.popup-buy-inner-window-head Оплатить аванс в&nbsp;офисе
+      fieldset
+        span.popup-buy-inner-window-question ХОТИТЕ ВНЕСТИ АВАНС В ОФИСЕ?
+        blockquote - Приезжайте, будем рады вас видеть!
+      fieldset
+        .popup-buy-inner-window-input-description
+          label Наш адрес:
+          span.popup-buy-inner-window-input-description-info  БП Румянцево, офис 912/1Г
+          a(href="#").popup-buy-inner-window-link.popup-buy-inner-window-link-add-margin
+            span показать на карте
+        .popup-buy-inner-window-input-description
+          label Часы работы:
+          span.popup-buy-inner-window-input-description-info Пн — Пт: с 09:00 до 17:00
+        .popup-buy-inner-window-input-description
+          label Телефон reception:
+          span.popup-buy-inner-window-input-description-info +7 499 350 84 10
+        .popup-buy-inner-window-input-description
+          span.popup-buy-inner-window-warning Для оплаты аванса необходимо назвать номер заказа.
+            p Оплата возможна наличными или картами
+        .popup-buy-inner-window-pay-icons
+          .popup-buy-inner-window-pay-icons-item(style="background-image: url(assets/img/icons/mastercard.svg")
+          .popup-buy-inner-window-pay-icons-item(style="background-image: url(assets/img/icons/visa.svg)")
+          .popup-buy-inner-window-pay-icons-item(style="background-image: url(assets/img/icons/mir.svg)")
+      .popup-buy-inner-window-image(style="background-image: url(assets/img//popup-buy-office.jpg")
+
+
+      button(type="button" onclick="$.fancybox.close();").popup-buy-button.popup-buy-button-center.popup-buy-button-magenta << Вернуться
+
+      a(href="https://www.youtube.com/watch?v=j-tB5QIQP_Q" data-fancybox="popup-buy-link-video-7").popup-buy-link-video
+        span видео инструкция
+
+      button.popup-buy-online-chat(type="button" onclick="jivo_api.open()")
+        span онлайн- ассистент
+    .popup-buy-phone
+      a(href="tel:88000000000") 8 800 000 00 00
+      span техподдержка
