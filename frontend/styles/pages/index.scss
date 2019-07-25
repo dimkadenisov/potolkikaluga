@@ -2178,6 +2178,7 @@
   &-text {
     position: relative;
     padding: 130px 0 0 0;
+    color: $gray-800;
 
     &-big {
       display: block;
@@ -2191,7 +2192,7 @@
       display: block;
       margin: 0 0 20px 0;
       font-family: "PragmaticaLightC", "Arial", "Helvetica", sans-serif;
-      font-size: 24px;
+      font-size: 28px;
       line-height: 1.16;
     }
 
@@ -2199,7 +2200,7 @@
       display: block;
       margin: 0 0 35px 0;
       font-family: "PragmaticaLightC", "Arial", "Helvetica", sans-serif;
-      font-size: 19px;
+      font-size: 22px;
       line-height: 1.1;
     }
 
@@ -2258,7 +2259,7 @@
     background: $gray-575;
     color: $white;
     font-family: "Pragmatica", "Arial", "Helvetica", sans-serif;
-    font-size: 19px;
+    font-size: 22px;
     line-height: 48px;
     text-align: center;
     text-transform: uppercase;
@@ -2717,7 +2718,7 @@
     border-radius: 50%;
     box-shadow: 2px 2px 15px $gray-600;
     color: $white;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.3;
 
     span {
@@ -2731,7 +2732,7 @@
     display: block;
     margin: 35px 0 15px 0;
     color: $black;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 1.25;
   }
@@ -2740,7 +2741,7 @@
     display: block;
     margin: 0 0 55px 0;
     color: $black;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.25;
   }
 
@@ -2758,13 +2759,13 @@
     align-items: center;
     position: absolute;
     right: 70px;
-    width: 343px;
+    width: 370px;
     height: 36px;
     background-color: rgb(255, 0, 102);
     border: none;
     box-shadow: 7px 12.124px 28px 0 rgba(229, 4, 105, 0.5);
     color: $white;
-    font-size: 16px;
+    font-size: 18px;
 
     &:hover,
     &:focus {
@@ -2801,7 +2802,7 @@
       }
 
       span {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.25;
       }
     }
@@ -2822,7 +2823,7 @@
       top: 450px;
       right: 22vw;
       transform: rotate(-40deg);
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 
@@ -3590,9 +3591,18 @@
   height: 435px;
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
   body > div {
     overflow-x: hidden;
+  }
+
+  body > div.shop-now {
+    overflow-x: visible;
+  }
+
+  .shop-now-person {
+    bottom: -68px;
+    background-position: -85px 0;
   }
 
   .catalog-icons-img {
@@ -3602,7 +3612,7 @@
   }
 }
 
-@media screen and (max-width: 1579px) {
+@media screen and (max-width: 1575px) {
   .cta-button {
     position: relative;
     top: -2rem;
@@ -4457,15 +4467,15 @@
       padding: 87px 0 0;
 
       &-big {
-        font-size: 37px;
+        font-size: 42px;
       }
 
       &-middle {
-        font-size: 18px;
+        font-size: 20px;
       }
 
       &-small {
-        font-size: 14px;
+        font-size: 16px;
       }
     }
 
@@ -4481,7 +4491,7 @@
     }
 
     &-benefit {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 30px;
     }
 
@@ -4626,7 +4636,7 @@
     &-promo {
       width: 113px;
       height: 113px;
-      font-size: 13px;
+      font-size: 15px;
 
       span {
         top: 45%;
@@ -4636,12 +4646,12 @@
 
     &-heading {
       margin: 25px 0 15px 0;
-      font-size: 25px;
+      font-size: 28px;
     }
 
     &-description {
       margin: 0 0 40px 0;
-      font-size: 15px;
+      font-size: 18px;
     }
 
     .personal-guarantee-request-input {
@@ -4651,9 +4661,9 @@
     }
 
     &-button {
-      width: 238px;
+      width: 275px;
       height: 36px;
-      font-size: 14px;
+      font-size: 16px;
     }
 
     &-icons {
@@ -4670,7 +4680,7 @@
         }
 
         span {
-          font-size: 13px;
+          font-size: 15px;
         }
       }
     }
@@ -4685,7 +4695,7 @@
       &-text {
         top: 290px;
         right: 20vw;
-        font-size: 13px;
+        font-size: 15px;
       }
     }
 
@@ -6025,11 +6035,6 @@
 
   .free-lamp {
     padding: 30px 0 0 0;
-    // margin: 0 0 100px 0;
-
-    // &::after {
-    //   border-top-width: 60px;
-    // }
 
     &-arrow {
       top: -8px;
@@ -6038,7 +6043,7 @@
     &-promo {
       width: 140px;
       height: 140px;
-      font-size: 16px;
+      font-size: 18px;
 
       span {
         top: 35%;
@@ -6048,13 +6053,13 @@
 
     &-heading {
       margin: 45px 0 15px 0;
-      font-size: 35px;
+      font-size: 40px;
       text-transform: uppercase;
     }
 
     &-description {
       margin: 0 0 28px 0;
-      font-size: 17px;
+      font-size: 18px;
     }
 
     .personal-guarantee-request-input {
@@ -6070,7 +6075,7 @@
       right: auto;
       width: 290px;
       height: 69px;
-      padding: 0 65px;
+      padding: 0 15px;
       margin: 0 0 90px 50px;
       font-size: 16px;
       text-align: center;
@@ -6272,7 +6277,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (max-width: 1199px) and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
   .shop-now-person {
     bottom: -15px;
   }
@@ -7064,7 +7069,7 @@
     &-button {
       width: 232px;
       height: 55px;
-      padding: 0 50px;
+      padding: 0 20px;
       margin: 0 0 90px 30px;
       font-size: 15px;
     }
@@ -7247,7 +7252,7 @@
   }
 }
 
-@media screen and (max-width: 991px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (max-width: 991px) and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
   .shop-now-person::after {
     bottom: -10px;
   }
@@ -8246,7 +8251,7 @@
   }
 }
 
-@media screen and (max-width: 767px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (max-width: 767px) and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
   .get-pdf-corner {
     top: 60%;
   }
@@ -8539,7 +8544,7 @@
   }
 }
 
-@media screen and (max-width: 575px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (max-width: 575px) and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
   .get-pdf-corner {
     top: 56%;
   }

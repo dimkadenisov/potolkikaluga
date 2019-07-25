@@ -1255,27 +1255,27 @@ $(document).ready(function () {
   }, 400); //parallax(rellax.js) end
   //animations start
 
-  var service = $('.top-line-service-item:first-of-type');
-  var credit = $('.top-line-service-item:last-of-type');
-  var stateChecker = 1;
+  var service = $($('.top-line-service-item')[0]);
+  var work = $($('.top-line-service-item')[1]);
+  var stateChecker = 0;
 
   var toggleServiceStateAnimation = function toggleServiceStateAnimation() {
     if (window.pageYOffset <= 50 && document.documentElement.clientWidth >= 768) {
-      if (stateChecker % 2 == 0) {
+      if (stateChecker === 0) {
         $.when(service.fadeOut(450)).done(function () {
-          credit.fadeIn(450);
+          work.fadeIn(450);
           stateChecker = 1;
         });
-      } else {
-        $.when(credit.fadeOut(450)).done(function () {
+      } else if (stateChecker === 1) {
+        $.when(work.fadeOut(450)).done(function () {
           service.fadeIn(450);
-          stateChecker = 2;
+          stateChecker = 0;
         });
       }
     }
   };
 
-  var animationInterval = setInterval(toggleServiceStateAnimation, 3000); //animations end
+  var animationInterval = setInterval(toggleServiceStateAnimation, 4000); //animations end
 
   var redLine = $('.steps-progress-bar-line-red');
 
