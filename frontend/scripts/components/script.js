@@ -1364,27 +1364,31 @@ $(document).ready(function() {
 
   //animations start
 
-  let service = $('.top-line-service-item:first-of-type');
-  let credit = $('.top-line-service-item:last-of-type');
-  let stateChecker = 1;
+  let service = $($('.top-line-service-item')[0]);
+  let work = $($('.top-line-service-item')[1]);
+  let stateChecker = 0;
 
-  let toggleServiceStateAnimation = function toggleServiceStateAnimation() {
+  let toggleServiceStateAnimation = function() {
     if (window.pageYOffset <= 50 && document.documentElement.clientWidth >= 768) {
-      if (stateChecker % 2 == 0) {
-        $.when(service.fadeOut(450)).done(function() {
-                credit.fadeIn(450);
-                stateChecker = 1;
+      if (stateChecker === 0) {
+        $.when(
+          service.fadeOut(450),
+        ).done(function() {
+          work.fadeIn(450);
+          stateChecker = 1;
         });
-      } else {
-        $.when(credit.fadeOut(450)).done(function() {
-                service.fadeIn(450);
-                stateChecker = 2;
+      } else if (stateChecker === 1) {
+        $.when(
+          work.fadeOut(450)
+        ).done(function() {
+          service.fadeIn(450);
+          stateChecker = 0;
         });
       }
     }
   };
 
-  var animationInterval = setInterval(toggleServiceStateAnimation, 3000);
+  var animationInterval = setInterval(toggleServiceStateAnimation, 4000);
 
 
   //animations end
