@@ -182,7 +182,7 @@ $(document).ready(function() {
 
   //calculator scripts end
 
-// swipers start
+  // swipers start
 
   (function() {
 
@@ -1467,6 +1467,7 @@ $(document).ready(function() {
 
         const showCatalogSwiper = (index) => {
           catalogSwipers.eq(index).fadeIn();
+          setCeilingCategorys(index);
         }
 
         setTimeout(showCatalogSwiper, 400, index)
@@ -1474,6 +1475,29 @@ $(document).ready(function() {
       }
     })
   });
+
+  const setCeilingCategorys = function(index) {
+    let ceilingType = $('.catalog-categories a.active').attr('data-value');
+    let catalogSwiperActive = $($('.catalog-swiper')[index]);
+    let ceilingCategorySpans = catalogSwiperActive.find('.catalog-swiper-slide-category');
+
+    ceilingCategorySpans.each(function(index) {
+      $(this).text(`${ceilingType} № ${index + 1}`);
+    });
+  }
+
+  setCeilingCategorys(0);
+
+  const setPopupCatalogData = function() {
+    let popupText = $(this).closest('.catalog-swiper').find('.catalog-swiper-slide.swiper-slide-active .catalog-swiper-slide-category').text();
+    let popupSpan = $('#popup-calculator-catalog .popup-heading span');
+    let popupInput = $('#popup-ceiling-type');
+
+    popupSpan.text(popupText);
+    popupInput.val(popupText);
+  }
+
+  $('.catalog-swiper-slide-description-button').click(setPopupCatalogData);
 
   const showFirstCatalogSwiper = () => {
     let catalogSwipers = $('.catalog-swiper').parent();

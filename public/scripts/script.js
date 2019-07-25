@@ -1337,12 +1337,34 @@ $(document).ready(function () {
 
         var showCatalogSwiper = function showCatalogSwiper(index) {
           catalogSwipers.eq(index).fadeIn();
+          setCeilingCategorys(index);
         };
 
         setTimeout(showCatalogSwiper, 400, index);
       }
     });
   });
+
+  var setCeilingCategorys = function setCeilingCategorys(index) {
+    var ceilingType = $('.catalog-categories a.active').attr('data-value');
+    var catalogSwiperActive = $($('.catalog-swiper')[index]);
+    var ceilingCategorySpans = catalogSwiperActive.find('.catalog-swiper-slide-category');
+    ceilingCategorySpans.each(function (index) {
+      $(this).text("".concat(ceilingType, " \u2116 ").concat(index + 1));
+    });
+  };
+
+  setCeilingCategorys(0);
+
+  var setPopupCatalogData = function setPopupCatalogData() {
+    var popupText = $(this).closest('.catalog-swiper').find('.catalog-swiper-slide.swiper-slide-active .catalog-swiper-slide-category').text();
+    var popupSpan = $('#popup-calculator-catalog .popup-heading span');
+    var popupInput = $('#popup-ceiling-type');
+    popupSpan.text(popupText);
+    popupInput.val(popupText);
+  };
+
+  $('.catalog-swiper-slide-description-button').click(setPopupCatalogData);
 
   var showFirstCatalogSwiper = function showFirstCatalogSwiper() {
     var catalogSwipers = $('.catalog-swiper').parent();

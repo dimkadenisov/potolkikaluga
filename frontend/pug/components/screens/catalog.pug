@@ -14,66 +14,75 @@
           div.wow.fadeInUp(style="background-image: url(assets/img/800-colors-icon.svg)")
         .catalog-icons-img(style="background-image: url(assets/img/9000-configurations.svg)")
           div.wow.fadeInRight(style="background-image: url(assets/img/9000-configurations-icon.svg)")
+
 .catalog-main
   .container
     .row
       .col-12
         ul.catalog-categories.wow.fadeInUp
           li
-            a(href="#").active Глянцевые
+            a(href="#" data-value="Глянцевый").active Глянцевые
           li
-            a(href="#") Матовые
+            a(href="#" data-value="Матовый") Матовые
           li
-            a(href="#") Сатиновые
+            a(href="#" data-value="Сатиновый") Сатиновые
           li
-            a(href="#") С рисунком
+            a(href="#" data-value="С рисунком") С рисунком
           li
-            a(href="#") 2 уровневые
+            a(href="#" data-value="2 уровневый") 2 уровневые
           li
-            a(href="#") С подсветкой
+            a(href="#" data-value="С подсветкой") С подсветкой
           li
-            a.ecoline(href="#") Ecoline
+            a.ecoline(href="#" data-value="Ecoline") Ecoline
               include ../../../assets/img/icons/leaf.svg
+
       .col-12.col-xl-10.offset-xl-1.wow.fadeInUp
         .catalog-swiper.cs1
           .catalog-swiper-slide-description
-                span.catalog-swiper-slide-description-name
-                  b Гипоаллергенные натяжные потолки «Eco Line» S1
-                span.d-none.d-md-block.catalog-swiper-slide-description-description
-                  |Hello
-                span.catalog-swiper-slide-description-price
-                  span.catalog-swiper-slide-description-price-old
-                    |от
-                    span 590
-                    |
-                    |
-                    | р /м2
-                  b от 390 р /м2
-                .d-block.d-md-none
-                  include ../../../assets/img/icons/leaf-mobile.svg
+            span.catalog-swiper-slide-description-name
+              b Гипоаллергенные натяжные потолки «Eco Line» S1
+            span.d-none.d-md-block.catalog-swiper-slide-description-description
+              |Наивысшая прочность 100кг/м2  не боятся затоплений На полотне не образуется плесень
+            span.catalog-swiper-slide-description-price
+              span.catalog-swiper-slide-description-price-old
+                |от
+                span 590
+                |
+                |
+                | р /м2
+              b от 390 р /м2
+            button(data-fancybox="catalog-swiper-calculator-1" data-src="#popup-calculator-catalog").d-none.d-md-block.catalog-swiper-slide-description-button Хочешь такой же потолок?
+            .d-block.d-md-none
+              include ../../../assets/img/icons/leaf-mobile.svg
           .swiper-wrapper
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img(src="assets/img/catalog-sample-image-1.jpg", alt="Наивысшая прочность 100кг/м2  не боятся затоплений На полотне не образуется плесень")
+              span.catalog-swiper-slide-category двухуровневый № 4
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="2")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="3")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="4")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="5")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-1" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="6")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
           .d-none.d-xl-block.catalog-swiper-controls
           .d-block.catalog-swiper-button.catalog-swiper-button-prev
@@ -81,6 +90,7 @@
           .d-block.catalog-swiper-button.catalog-swiper-button-next
             div
           .d-none.d-xl-block.catalog-swiper-controls-separator
+          button(data-fancybox="catalog-swiper-calculator-2" data-src="#popup-calculator-catalog").d-block.d-md-none.catalog-swiper-slide-description-button Хочешь такой же потолок?
         .d-none.d-xl-block.catalog-thumbs.ct1
           .swiper-wrapper
             .catalog-thumbs-thumb
@@ -105,48 +115,51 @@
       .col-12.col-xl-10.offset-xl-1
         .catalog-swiper.cs2
           .catalog-swiper-slide-description
-                span.catalog-swiper-slide-description-name
-                  b Гипоаллергенные натяжные потолки «Eco Line» s2
-                span.d-none.d-md-block.catalog-swiper-slide-description-description
-                  |Hello
-                  //- |Наивысшая прочность
-                  //- |100кг/м2  не боятся
-                  //- |затоплений
-                  //- |На полотне не образуется плесень
-                span.catalog-swiper-slide-description-price
-                  span.catalog-swiper-slide-description-price-old
-                    |от
-                    span 590
-                    |
-                    |
-                    | р /м2
-                  b от 390 р /м2
-                .d-block.d-md-none
-                  include ../../../assets/img/icons/leaf-mobile.svg
+            span.catalog-swiper-slide-description-name
+              b Гипоаллергенные натяжные потолки «Eco Line» s2
+            span.d-none.d-md-block.catalog-swiper-slide-description-description
+              |Hello
+            span.catalog-swiper-slide-description-price
+              span.catalog-swiper-slide-description-price-old
+                |от
+                span 590
+                |
+                |
+                | р /м2
+              b от 390 р /м2
+            button(data-fancybox="catalog-swiper-calculator-3" data-src="#popup-calculator-catalog").d-none.d-md-block.catalog-swiper-slide-description-button Хочешь такой же потолок?
+            .d-block.d-md-none
+              include ../../../assets/img/icons/leaf-mobile.svg
           .swiper-wrapper
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-2" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="test")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-2" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="2")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-2" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="3")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-2" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="4")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-2" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="5")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-2" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="6")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
           .d-none.d-xl-block.catalog-swiper-controls
           .d-block.catalog-swiper-button.catalog-swiper-button-prev
@@ -154,6 +167,7 @@
           .d-block.catalog-swiper-button.catalog-swiper-button-next
             div
           .d-none.d-xl-block.catalog-swiper-controls-separator
+          button(data-fancybox="catalog-swiper-calculator-4" data-src="#popup-calculator-catalog").d-block.d-md-none.catalog-swiper-slide-description-button Хочешь такой же потолок?
         .d-none.d-xl-block.catalog-thumbs.ct2
           .swiper-wrapper
             .catalog-thumbs-thumb
@@ -178,48 +192,51 @@
       .col-12.col-xl-10.offset-xl-1
         .catalog-swiper.cs3
           .catalog-swiper-slide-description
-                span.catalog-swiper-slide-description-name
-                  b Гипоаллергенные натяжные потолки «Eco Line» s3
-                span.d-none.d-md-block.catalog-swiper-slide-description-description
-                  |Hello
-                  //- |Наивысшая прочность
-                  //- |100кг/м2  не боятся
-                  //- |затоплений
-                  //- |На полотне не образуется плесень
-                span.catalog-swiper-slide-description-price
-                  span.catalog-swiper-slide-description-price-old
-                    |от
-                    span 590
-                    |
-                    |
-                    | р /м2
-                  b от 390 р /м2
-                .d-block.d-md-none
-                  include ../../../assets/img/icons/leaf-mobile.svg
+            span.catalog-swiper-slide-description-name
+              b Гипоаллергенные натяжные потолки «Eco Line» s3
+            span.d-none.d-md-block.catalog-swiper-slide-description-description
+              |Hello
+            span.catalog-swiper-slide-description-price
+              span.catalog-swiper-slide-description-price-old
+                |от
+                span 590
+                |
+                |
+                | р /м2
+              b от 390 р /м2
+            button(data-fancybox="catalog-swiper-calculator-5" data-src="#popup-calculator-catalog").d-none.d-md-block.catalog-swiper-slide-description-button Хочешь такой же потолок?
+            .d-block.d-md-none
+              include ../../../assets/img/icons/leaf-mobile.svg
           .swiper-wrapper
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-3" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="Наивысшая прочность 100кг/м2  не боятся затоплений На полотне не образуется плесень")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-3" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="2")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-3" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="3")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-3" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="4")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-3" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="5")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-3" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="6")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
           .d-none.d-xl-block.catalog-swiper-controls
           .d-block.catalog-swiper-button.catalog-swiper-button-prev
@@ -227,6 +244,7 @@
           .d-block.catalog-swiper-button.catalog-swiper-button-next
             div
           .d-none.d-xl-block.catalog-swiper-controls-separator
+          button(data-fancybox="catalog-swiper-calculator-6" data-src="#popup-calculator-catalog").d-block.d-md-none.catalog-swiper-slide-description-button Хочешь такой же потолок?
         .d-none.d-xl-block.catalog-thumbs.ct3
           .swiper-wrapper
             .catalog-thumbs-thumb
@@ -251,48 +269,51 @@
       .col-12.col-xl-10.offset-xl-1
         .catalog-swiper.cs4
           .catalog-swiper-slide-description
-                span.catalog-swiper-slide-description-name
-                  b Гипоаллергенные натяжные потолки «Eco Line» s4
-                span.d-none.d-md-block.catalog-swiper-slide-description-description
-                  |Hello
-                  //- |Наивысшая прочность
-                  //- |100кг/м2  не боятся
-                  //- |затоплений
-                  //- |На полотне не образуется плесень
-                span.catalog-swiper-slide-description-price
-                  span.catalog-swiper-slide-description-price-old
-                    |от
-                    span 590
-                    |
-                    |
-                    | р /м2
-                  b от 390 р /м2
-                .d-block.d-md-none
-                  include ../../../assets/img/icons/leaf-mobile.svg
+            span.catalog-swiper-slide-description-name
+              b Гипоаллергенные натяжные потолки «Eco Line» s4
+            span.d-none.d-md-block.catalog-swiper-slide-description-description
+              |Hello
+            span.catalog-swiper-slide-description-price
+              span.catalog-swiper-slide-description-price-old
+                |от
+                span 590
+                |
+                |
+                | р /м2
+              b от 390 р /м2
+            button(data-fancybox="catalog-swiper-calculator-7" data-src="#popup-calculator-catalog").d-none.d-md-block.catalog-swiper-slide-description-button Хочешь такой же потолок?
+            .d-block.d-md-none
+              include ../../../assets/img/icons/leaf-mobile.svg
           .swiper-wrapper
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-4" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="Наивысшая прочность 100кг/м2  не боятся затоплений На полотне не образуется плесень")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-4" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="2")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-4" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="3")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-4" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="4")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-4" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="5")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-4" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="6")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
           .d-none.d-xl-block.catalog-swiper-controls
           .d-block.catalog-swiper-button.catalog-swiper-button-prev
@@ -300,6 +321,7 @@
           .d-block.catalog-swiper-button.catalog-swiper-button-next
             div
           .d-none.d-xl-block.catalog-swiper-controls-separator
+          button(data-fancybox="catalog-swiper-calculator-8" data-src="#popup-calculator-catalog").d-block.d-md-none.catalog-swiper-slide-description-button Хочешь такой же потолок?
         .d-none.d-xl-block.catalog-thumbs.ct4
           .swiper-wrapper
             .catalog-thumbs-thumb
@@ -324,48 +346,51 @@
       .col-12.col-xl-10.offset-xl-1
         .catalog-swiper.cs5
           .catalog-swiper-slide-description
-                span.catalog-swiper-slide-description-name
-                  b Гипоаллергенные натяжные потолки «Eco Line» s5
-                span.d-none.d-md-block.catalog-swiper-slide-description-description
-                  |Hello
-                  //- |Наивысшая прочность
-                  //- |100кг/м2  не боятся
-                  //- |затоплений
-                  //- |На полотне не образуется плесень
-                span.catalog-swiper-slide-description-price
-                  span.catalog-swiper-slide-description-price-old
-                    |от
-                    span 590
-                    |
-                    |
-                    | р /м2
-                  b от 390 р /м2
-                .d-block.d-md-none
-                  include ../../../assets/img/icons/leaf-mobile.svg
+            span.catalog-swiper-slide-description-name
+              b Гипоаллергенные натяжные потолки «Eco Line» s5
+            span.d-none.d-md-block.catalog-swiper-slide-description-description
+              |Hello
+            span.catalog-swiper-slide-description-price
+              span.catalog-swiper-slide-description-price-old
+                |от
+                span 590
+                |
+                |
+                | р /м2
+              b от 390 р /м2
+            button(data-fancybox="catalog-swiper-calculator-9" data-src="#popup-calculator-catalog").d-none.d-md-block.catalog-swiper-slide-description-button Хочешь такой же потолок?
+            .d-block.d-md-none
+              include ../../../assets/img/icons/leaf-mobile.svg
           .swiper-wrapper
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-5" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="Наивысшая прочность 100кг/м2  не боятся затоплений На полотне не образуется плесень")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-5" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="2")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-5" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="3")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-5" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="4")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-5" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="5")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-5" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="6")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
           .d-none.d-xl-block.catalog-swiper-controls
           .d-block.catalog-swiper-button.catalog-swiper-button-prev
@@ -373,6 +398,8 @@
           .d-block.catalog-swiper-button.catalog-swiper-button-next
             div
           .d-none.d-xl-block.catalog-swiper-controls-separator
+          button(data-fancybox="catalog-swiper-calculator-10" data-src="#popup-calculator-catalog").d-block.d-md-none.catalog-swiper-slide-description-button Хочешь такой же потолок?
+
         .d-none.d-xl-block.catalog-thumbs.ct5
           .swiper-wrapper
             .catalog-thumbs-thumb
@@ -397,48 +424,51 @@
       .col-12.col-xl-10.offset-xl-1
         .catalog-swiper.cs6
           .catalog-swiper-slide-description
-                span.catalog-swiper-slide-description-name
-                  b Гипоаллергенные натяжные потолки «Eco Line» s6
-                span.d-none.d-md-block.catalog-swiper-slide-description-description
-                  |Hello
-                  //- |Наивысшая прочность
-                  //- |100кг/м2  не боятся
-                  //- |затоплений
-                  //- |На полотне не образуется плесень
-                span.catalog-swiper-slide-description-price
-                  span.catalog-swiper-slide-description-price-old
-                    |от
-                    span 590
-                    |
-                    |
-                    | р /м2
-                  b от 390 р /м2
-                .d-block.d-md-none
-                  include ../../../assets/img/icons/leaf-mobile.svg
+            span.catalog-swiper-slide-description-name
+              b Гипоаллергенные натяжные потолки «Eco Line» s6
+            span.d-none.d-md-block.catalog-swiper-slide-description-description
+              |Hello
+            span.catalog-swiper-slide-description-price
+              span.catalog-swiper-slide-description-price-old
+                |от
+                span 590
+                |
+                |
+                | р /м2
+              b от 390 р /м2
+            button(data-fancybox="catalog-swiper-calculator-11" data-src="#popup-calculator-catalog").d-none.d-md-block.catalog-swiper-slide-description-button Хочешь такой же потолок?
+            .d-block.d-md-none
+              include ../../../assets/img/icons/leaf-mobile.svg
           .swiper-wrapper
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-6" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="Наивысшая прочность 100кг/м2  не боятся затоплений На полотне не образуется плесень")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-6" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="2")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-6" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="3")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-6" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="4")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-6" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="5")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-6" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="6")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
           .d-none.d-xl-block.catalog-swiper-controls
           .d-block.catalog-swiper-button.catalog-swiper-button-prev
@@ -446,6 +476,7 @@
           .d-block.catalog-swiper-button.catalog-swiper-button-next
             div
           .d-none.d-xl-block.catalog-swiper-controls-separator
+          button(data-fancybox="catalog-swiper-calculator-12" data-src="#popup-calculator-catalog").d-block.d-md-none.catalog-swiper-slide-description-button Хочешь такой же потолок?
         .d-none.d-xl-block.catalog-thumbs.ct6
           .swiper-wrapper
             .catalog-thumbs-thumb
@@ -470,48 +501,51 @@
       .col-12.col-xl-10.offset-xl-1
         .catalog-swiper.cs7
           .catalog-swiper-slide-description
-                span.catalog-swiper-slide-description-name
-                  b Гипоаллергенные натяжные потолки «Eco Line» s7
-                span.d-none.d-md-block.catalog-swiper-slide-description-description
-                  |Hello
-                  //- |Наивысшая прочность
-                  //- |100кг/м2  не боятся
-                  //- |затоплений
-                  //- |На полотне не образуется плесень
-                span.catalog-swiper-slide-description-price
-                  span.catalog-swiper-slide-description-price-old
-                    |от
-                    span 590
-                    |
-                    |
-                    | р /м2
-                  b от 390 р /м2
-                .d-block.d-md-none
-                  include ../../../assets/img/icons/leaf-mobile.svg
+            span.catalog-swiper-slide-description-name
+              b Гипоаллергенные натяжные потолки «Eco Line» s7
+            span.d-none.d-md-block.catalog-swiper-slide-description-description
+              |Hello
+            span.catalog-swiper-slide-description-price
+              span.catalog-swiper-slide-description-price-old
+                |от
+                span 590
+                |
+                |
+                | р /м2
+              b от 390 р /м2
+            button(data-fancybox="catalog-swiper-calculator-13" data-src="#popup-calculator-catalog").d-none.d-md-block.catalog-swiper-slide-description-button Хочешь такой же потолок?
+            .d-block.d-md-none
+              include ../../../assets/img/icons/leaf-mobile.svg
           .swiper-wrapper
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-7" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="Наивысшая прочность 100кг/м2  не боятся затоплений На полотне не образуется плесень")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-7" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="2")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-7" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="3")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-7" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="4")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-7" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="5")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
             .catalog-swiper-slide
               a(data-fancybox="catalog-gallery-7" data-back-focus="false" href="assets/img/catalog-sample-image-1.jpg").catalog-swiper-slide-img
                 img.swiper-lazy(data-src="assets/img/catalog-sample-image-1.jpg", alt="6")
+              span.catalog-swiper-slide-category двухуровневый № 4
                 .swiper-lazy-preloader
           .d-none.d-xl-block.catalog-swiper-controls
           .d-block.catalog-swiper-button.catalog-swiper-button-prev
@@ -519,6 +553,7 @@
           .d-block.catalog-swiper-button.catalog-swiper-button-next
             div
           .d-none.d-xl-block.catalog-swiper-controls-separator
+          button(data-fancybox="catalog-swiper-calculator-14" data-src="#popup-calculator-catalog").d-block.d-md-none.catalog-swiper-slide-description-button Хочешь такой же потолок?
         .d-none.d-xl-block.catalog-thumbs.ct7
           .swiper-wrapper
             .catalog-thumbs-thumb

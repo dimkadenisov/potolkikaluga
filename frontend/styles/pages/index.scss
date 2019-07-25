@@ -743,6 +743,8 @@
           margin: 0 0 20px 0;
           font-size: 19px;
           line-height: 1.2;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         &-price {
@@ -758,6 +760,41 @@
             }
           }
         }
+
+        &-button {
+          max-width: 252px;
+          margin-top: 10px;
+          margin-right: auto;
+          margin-left: auto;
+          padding: 5px 10px;
+          border: none;
+          background-color: $magenta;
+          color: $white;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: center;
+          box-shadow: 5px 5px 5px 0 rgba(229, 4, 105, 0.3);
+
+          &:hover,
+          &:focus {
+            color: $white;
+            text-decoration: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      &-category {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 60px;
+        padding: 10px;
+        background: rgba($white, 0.8);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        z-index: 2;
       }
     }
 
@@ -3884,6 +3921,15 @@
               margin: 0;
             }
           }
+
+          &-button {
+            font-size: 13px;
+          }
+        }
+
+        &-category {
+          top: 14px;
+          left: 49px;
         }
       }
 
@@ -6530,6 +6576,12 @@
         &-description {
           right: 0;
         }
+
+        &-category {
+          left: 0;
+          padding: 5px;
+          font-size: 10px;
+        }
       }
 
       &-button {
@@ -7476,9 +7528,11 @@
     }
 
     &-swiper {
-      height: 263px;
+      height: auto;
 
       &-slide {
+        max-height: 263px;
+
         &-description {
           top: -5px;
           right: 0;
@@ -7516,7 +7570,16 @@
               height: 14px;
             }
           }
+
+          &-button {
+            margin-top: 40px;
+            margin-bottom: 10px;
+          }
         }
+      }
+
+      &-button {
+        bottom: 60px;
       }
     }
   }
@@ -8333,6 +8396,22 @@
     display: none;
   }
 
+  .catalog {
+    &-swiper {
+      &-slide {
+        max-height: none;
+
+        &-description {
+          &-button {
+            max-width: 290px;
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
   .get-pdf {
     border-bottom: none;
 
@@ -8435,7 +8514,6 @@
       grid-column: 14 / 16;
     }
   }
-
 
   .diamond {
     &-blocks {
