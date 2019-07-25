@@ -774,6 +774,7 @@
           font-weight: bold;
           text-align: center;
           box-shadow: 5px 5px 5px 0 rgba(229, 4, 105, 0.3);
+          cursor: pointer;
 
           &:hover,
           &:focus {
@@ -877,6 +878,7 @@
       height: 100%;
       padding: 0 0 10px 0;
       flex-shrink: 0;
+      cursor: pointer;
 
       &-active {
         &::after {
