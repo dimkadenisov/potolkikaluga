@@ -7533,8 +7533,6 @@
       height: auto;
 
       &-slide {
-        max-height: 263px;
-
         &-description {
           top: -5px;
           right: 0;
@@ -7581,7 +7579,7 @@
       }
 
       &-button {
-        bottom: 60px;
+        bottom: 100px;
       }
     }
   }
@@ -8401,8 +8399,6 @@
   .catalog {
     &-swiper {
       &-slide {
-        max-height: none;
-
         &-description {
           &-button {
             max-width: 290px;
@@ -8410,6 +8406,16 @@
             margin-top: 0;
           }
         }
+
+        &-img {
+          img {
+            min-height: 230px;
+          }
+        }
+      }
+
+      &-button {
+        bottom: 60px;
       }
     }
   }
