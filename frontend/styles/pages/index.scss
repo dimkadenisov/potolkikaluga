@@ -727,20 +727,20 @@
         right: 60px;
         width: 336px;
         height: 340px;
-        padding: 35px;
+        padding: 24px 35px 28px 35px;
         background: $white;
         box-shadow: 5.847px 19.126px 40px 0 rgba(0, 0, 0, 0.1);
         z-index: 2;
 
         &-name {
-          margin: 0 0 20px 0;
+          margin: 0 0 15px 0;
           font-size: 19px;
           line-height: 1.2;
         }
 
         &-description {
           flex-grow: 1;
-          margin: 0 0 20px 0;
+          margin: 0 0 15px 0;
           font-size: 19px;
           line-height: 1.2;
           overflow: hidden;
